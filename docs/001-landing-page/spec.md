@@ -205,8 +205,8 @@ In `app/router.tsx`:
 
 ### 6.3 Animated Counters
 - `AnimatedCounter` accepts `target: number`, `duration: number`, `suffix?: string`.
-- Uses `IntersectionObserver` to start counting only when the stats bar enters viewport.
-- Increments via `requestAnimationFrame` easing function.
+- Uses GSAP `ScrollTrigger` to start counting only when the stats bar enters the viewport.
+- Increments via GSAP `gsap.to()` tweening a proxy object to animate the number.
 
 ### 6.4 Mobile Navbar
 - shadcn `Sheet` component slides in from the side (flips side in RTL).
@@ -217,6 +217,17 @@ In `app/router.tsx`:
 - The "View Live Queue" button links to `/lobby/:doctorId`.
 - Since the landing page has no auth, use a hardcoded default doctor ID from env (`VITE_DEFAULT_DOCTOR_ID`) or query `GET /doctors` for the first active doctor.
 - If `VITE_DEFAULT_DOCTOR_ID` is undefined, the button is hidden until the API resolves.
+
+### 6.6 GSAP Animations
+- **Library**: Use `gsap` and the `ScrollTrigger` plugin for advanced scroll-driven animations.
+- **Scroll-Based Animations**:
+  - Hero Section: Staggered fade-in and slide-up for headline, subheadline, and CTA buttons on load.
+  - Features / How It Works: Staggered reveal (fade-in + slight slide-up) of cards/steps as they enter the viewport.
+  - Testimonials: Smooth parallax or horizontal slide-in effects triggered by scrolling.
+- **SVG Animations**:
+  - Integrate dynamic SVG graphics (e.g., in the Hero section or Feature icons).
+  - Animate SVG elements using GSAP (e.g., floating elements, drawing paths, or pulsing shapes) to add a premium, interactive feel.
+- **Accessibility**: Ensure all GSAP animations respect `gsap.matchMedia('(prefers-reduced-motion: reduce)')` to disable or simplify animations.
 
 ---
 
@@ -416,7 +427,9 @@ In `app/router.tsx`:
 - [ ] Hero headline renders in `<h1>`; page has exactly one `<h1>`.
 - [ ] "Book an Appointment" CTA navigates to `/register`.
 - [ ] "View Live Queue" CTA navigates to `/lobby/<doctorId>` (or is hidden if none available).
-- [ ] Stats counters animate on first viewport entry; skip animation if `prefers-reduced-motion`.
+- [ ] Stats counters animate on first viewport entry using GSAP; skip animation if `prefers-reduced-motion`.
+- [ ] GSAP ScrollTrigger animations (fade, stagger) execute smoothly on scroll.
+- [ ] SVGs contain GSAP-driven animations (e.g., floating or drawing paths).
 - [ ] All 6 feature cards render with icon, title, and body.
 - [ ] All 4 how-it-works steps render with step number, title, and description.
 - [ ] All 3 testimonials render.

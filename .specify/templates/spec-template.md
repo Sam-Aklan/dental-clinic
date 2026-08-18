@@ -100,6 +100,20 @@
 - **[Entity 1]**: [What it represents, key attributes without implementation]
 - **[Entity 2]**: [What it represents, relationships to other entities]
 
+## Integration Impact *(mandatory)*
+
+### Backend Contracts
+
+- [List affected endpoints, DTOs, auth/role rules, response envelopes, and error shapes]
+
+### Frontend Consumption
+
+- [List affected pages, hooks, query keys, forms, typed models, and route guards]
+
+### Verification Plan
+
+- [List required unit, integration, e2e, build, type-check, and manual validation steps]
+
 ## Success Criteria *(mandatory)*
 
 <!--

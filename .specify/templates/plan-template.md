@@ -3,7 +3,7 @@
 **Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
 **Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
 
-**Note**: This template is filled in by the `/speckit-plan` command. See `.specify/templates/plan-template.md` for the execution workflow.
+**Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/plan-template.md` for the execution workflow.
 
 ## Summary
 
@@ -31,7 +31,18 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- Spec alignment: Identify the governing project docs (`plan.md`, relevant `docs/` or
+  `specs/` file, and module/page plans) and confirm this plan does not introduce
+  undocumented behavior.
+- Contract-first integration: List backend endpoints, DTOs, auth rules, frontend typed
+  models, query keys, and error contracts affected by this feature.
+- Verification scope: Define the required automated tests, build/type-check commands,
+  and any manual workflow checks needed to prove the change.
+- Ownership boundaries: Confirm the intended changes respect backend module ownership and
+  frontend route/component/hook/lib separation.
+- React/NestJS standards: Confirm the implementation approach uses the established stack
+  and preserves i18n, RTL, accessibility, validation, and Swagger/API documentation as
+  applicable.
 
 ## Project Structure
 
@@ -39,12 +50,12 @@
 
 ```text
 specs/[###-feature]/
-├── plan.md              # This file (/speckit-plan command output)
-├── research.md          # Phase 0 output (/speckit-plan command)
-├── data-model.md        # Phase 1 output (/speckit-plan command)
-├── quickstart.md        # Phase 1 output (/speckit-plan command)
-├── contracts/           # Phase 1 output (/speckit-plan command)
-└── tasks.md             # Phase 2 output (/speckit-tasks command - NOT created by /speckit-plan)
+├── plan.md              # This file (/speckit.plan command output)
+├── research.md          # Phase 0 output (/speckit.plan command)
+├── data-model.md        # Phase 1 output (/speckit.plan command)
+├── quickstart.md        # Phase 1 output (/speckit.plan command)
+├── contracts/           # Phase 1 output (/speckit.plan command)
+└── tasks.md             # Phase 2 output (/speckit.tasks command - NOT created by /speckit.plan)
 ```
 
 ### Source Code (repository root)
@@ -92,7 +103,7 @@ ios/ or android/
 ```
 
 **Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+directories captured above. Explain how ownership stays aligned with the constitution.]
 
 ## Complexity Tracking
 
