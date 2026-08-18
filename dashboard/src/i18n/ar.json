@@ -1,0 +1,1505 @@
+{
+	"common": {
+		"loading": "جارٍ التحميل"
+	},
+	"queue": {
+		"page": {
+			"title": "طابور الطبيب",
+			"subtitle": "تابع مواعيد اليوم وحافظ على سير العيادة"
+		},
+		"status": {
+			"PENDING": "معلق",
+			"CONFIRMED": "مؤكد",
+			"IN_PROGRESS": "قيد التنفيذ",
+			"COMPLETED": "مكتمل",
+			"NO_SHOW": "لم يحضر",
+			"CANCELED": "ملغي",
+			"connected": "متصل",
+			"reconnecting": "إعادة الاتصال",
+			"disconnected": "منقطع"
+		},
+		"connection": {
+			"connected": "متصل",
+			"reconnecting": "إعادة الاتصال",
+			"offline": "غير متصل",
+			"disconnected": "منقطع"
+		},
+		"summary": {
+			"inSession": "داخل الجلسة",
+			"waiting": "بانتظار الدور",
+			"upcoming": "قادم",
+			"completed": "مكتمل",
+			"noShow": "لم يحضر"
+		},
+		"section": {
+			"inSession": "داخل الجلسة",
+			"waiting": "بانتظار الدور",
+			"upcoming": "قادم",
+			"followUp": "المتابعة",
+			"finished": "المنتهية"
+		},
+		"sectionEmpty": {
+			"inSession": "لا توجد مواعيد داخل الجلسة.",
+			"waiting": "لا توجد مواعيد بانتظار الدور الآن.",
+			"upcoming": "لا توجد مواعيد قادمة.",
+			"followUp": "لا توجد مواعيد متابعة تحتاج إجراءً.",
+			"finished": "لا توجد مواعيد منتهية بعد."
+		},
+		"reconnecting": "جارٍ إعادة الاتصال...",
+		"profile": {
+			"title": "سياق ملف الطبيب",
+			"loading": "جارٍ تحميل ملف الطبيب المرتبط...",
+			"specializationFallback": "التخصص غير مذكور",
+			"warningTitle": "تعذر تحميل ملف الطبيب",
+			"warning": "تظل بيانات الطابور متاحة، لكن تعذر تحميل سياق الملف الشخصي."
+		},
+		"filters": {
+			"showFinished": "إظهار المنتهية",
+			"clear": "مسح المرشحات"
+		},
+		"actions": {
+			"confirm": "تأكيد",
+			"start": "بدء",
+			"complete": "إكمال",
+			"noShow": "لم يحضر",
+			"cancel": "إلغاء",
+			"markNoFollowUpNeeded": "وضع علامة لا تحتاج متابعة",
+			"refresh": "تحديث",
+			"editNote": "تعديل الملاحظة",
+			"save": "حفظ"
+		},
+		"badges": {
+			"followUpNeeded": "تحتاج متابعة",
+			"followUpScheduled": "تمت جدولة المتابعة"
+		},
+		"labels": {
+			"scheduled": "الموعد {{time}}"
+		},
+		"freshness": {
+			"updated": "تم التحديث قبل {{when}}",
+			"waiting": "بانتظار التحديثات المباشرة"
+		},
+		"dialog": {
+			"noShow": {
+				"title": "تحديد كعدم حضور؟",
+				"description": "سيتم وسم الموعد كعدم حضور ولا يمكن التراجع من هذه النافذة."
+			}
+		},
+		"note": {
+			"title": "تعديل الملاحظة",
+			"description": "احفظ ملاحظة تشغيلية للرقم #{{position}}.",
+			"empty": "لا توجد ملاحظة بعد",
+			"maxLength": "يجب ألا تتجاوز الملاحظات 1000 حرف"
+		},
+		"empty": {
+			"title": "لا توجد مواعيد",
+			"description": "جرّب مرشحاً آخر أو عُد لاحقاً."
+		},
+		"error": {
+			"load": "تعذر تحميل طابور الطبيب"
+		}
+	},
+	"lobby": {
+		"loading": "جارٍ تحميل الطابور…",
+		"doctorNotFound": "الطبيب غير موجود",
+		"invalidLink": "رابط شاشة الاستقبال غير صالح",
+		"invalidLinkDescription": "هذا الرابط يفتقد رمز الكشك أو أن صلاحية الرمز قد انتهت.",
+		"unexpectedError": "تعذر تحميل شاشة الاستقبال",
+		"connectionLost": "انقطع الاتصال. جارٍ إعادة الاتصال…",
+		"nowInProgress": "جلسة حالية",
+		"noPatientInSession": "لا يوجد مريض في الجلسة حالياً",
+		"nextUp": "التالي",
+		"noUpcoming": "لا توجد مواعيد قادمة",
+		"waiting": "في الانتظار",
+		"noWaiting": "لا يوجد مرضى في الانتظار",
+		"morePatients": "+ {{count}} آخرون",
+		"patient": "مريض #{{number}}",
+		"scheduled": "موعد {{time}}",
+		"started": "بدأت {{time}}",
+		"lastUpdated": "آخر تحديث: {{time}}",
+		"poweredBy": "مدعوم من عيادة الأسنان",
+		"selectLanguage": "اختر اللغة",
+		"inProgress": "جارٍ الآن"
+	},
+	"doctorToday": {
+		"page": {
+			"title": "اليوم الطبي",
+			"subtitle": "راجع جدول اليوم وعبء العيادة"
+		},
+		"header": {
+			"date": "تاريخ محدد",
+			"refresh": "تحديث"
+		},
+		"actions": {
+			"retry": "إعادة المحاولة",
+			"save": "حفظ",
+			"saving": "جارٍ الحفظ...",
+			"confirm": "تأكيد",
+			"start": "بدء",
+			"complete": "إكمال",
+			"noShow": "لم يحضر"
+		},
+		"kpi": {
+			"todayTotal": "إجمالي اليوم",
+			"completed": "مكتمل",
+			"remaining": "المتبقي",
+			"inSession": "داخل الجلسة",
+			"noShows": "عدم الحضور",
+			"selectedDate": "التاريخ المحدد"
+		},
+		"charts": {
+			"week": {
+				"title": "نظرة أسبوعية",
+				"description": "اختر يوماً لتبديل الجدول إلى ذلك التاريخ."
+			},
+			"status": {
+				"title": "توزيع الحالات الشهري",
+				"description": "استخدم شرائح الحالة لتصفية الجدول."
+			},
+			"hourly": {
+				"title": "العبء الساعي الشهري",
+				"description": "شاهد أكثر أوقات العيادة ازدحاماً خلال الشهر."
+			}
+		},
+		"tabs": {
+			"today": "اليوم",
+			"thisWeek": "هذا الأسبوع"
+		},
+		"profile": {
+			"title": "سياق ملف الطبيب",
+			"loading": "جارٍ تحميل ملف الطبيب المرتبط...",
+			"specializationFallback": "التخصص غير مذكور",
+			"warningTitle": "تعذر تحميل ملف الطبيب",
+			"warning": "تظل بيانات الجدول متاحة، لكن تعذر تحميل سياق الملف الشخصي."
+		},
+		"filters": {
+			"status": "تصفية الحالة",
+			"all": "كل الحالات",
+			"sort": "الترتيب حسب"
+		},
+		"table": {
+			"date": "التاريخ",
+			"time": "الوقت",
+			"patient": "المريض",
+			"patientSequence": "المريض #{{sequence}}",
+			"status": "الحالة",
+			"duration": "المدة",
+			"notes": "الملاحظات",
+			"actions": "الإجراءات",
+			"gap": "فاصل لمدة {{minutes}} دقيقة",
+			"inSession": "داخل الجلسة",
+			"empty": {
+				"title": "لا توجد مواعيد",
+				"description": "جرّب تاريخاً آخر أو امسح المرشحات."
+			},
+			"sort": {
+				"startsAt": "وقت البداية",
+				"status": "الحالة",
+				"date": "التاريخ"
+			}
+		},
+		"note": {
+			"label": "ملاحظات المريض رقم {{sequence}}",
+			"maxLength": "يجب ألا تتجاوز الملاحظات 1000 حرف",
+			"saveErrorTitle": "تعذر حفظ الملاحظات",
+			"saveError": "حاول مرة أخرى. تم الحفاظ على المسودة."
+		},
+		"error": {
+			"stats": "تعذر تحميل بطاقات المؤشرات",
+			"trends": "تعذر تحميل اتجاهات الأسبوع",
+			"statusDistribution": "تعذر تحميل توزيع الحالات",
+			"hourlyLoad": "تعذر تحميل العبء الساعي",
+			"schedule": "تعذر تحميل الجدول"
+		}
+	},
+	"nav": {
+		"bookAppointment": "حجز موعد",
+		"myAppointments": "مواعيدي",
+		"waitlist": "قائمة الانتظار",
+		"profile": "الملف الشخصي",
+		"myQueue": "طابوري",
+		"lobbyAccess": "وصول شاشة الاستقبال",
+		"todaysSchedule": "جدول اليوم",
+		"queue": "الطابور",
+		"appointments": "المواعيد",
+		"patients": "المرضى",
+		"walkInBooking": "حجز مباشر",
+		"dashboard": "لوحة التحكم",
+		"clinicSettings": "إعدادات العيادة",
+		"doctors": "الأطباء",
+		"users": "المستخدمون",
+		"auditLog": "سجل التدقيق",
+		"label": "التنقل الرئيسي"
+	},
+	"lobbyAccess": {
+		"title": "وصول شاشة الاستقبال",
+		"subtitle": "أنشئ رابطاً عاماً آمناً لشاشة الاستقبال ليستخدمه موظف الاستقبال أو المشرف في غرفة الانتظار.",
+		"generateTitle": "إنشاء رابط شاشة الاستقبال",
+		"generateDescription": "اختر طبيباً، ثم أنشئ رمز كشك ورابطاً عاماً جاهزاً للاستخدام.",
+		"doctorLabel": "الطبيب",
+		"selectDoctorPlaceholder": "اختر طبيباً",
+		"generate": "إنشاء الرابط",
+		"generateSuccess": "تم إنشاء رابط شاشة الاستقبال",
+		"generateError": "تعذر إنشاء رابط شاشة الاستقبال",
+		"publicUrlLabel": "رابط الشاشة",
+		"copy": "نسخ الرابط",
+		"open": "فتح الشاشة",
+		"copySuccess": "تم نسخ رابط شاشة الاستقبال",
+		"copyError": "تعذر نسخ رابط شاشة الاستقبال",
+		"selectedDoctorLabel": "الطبيب المحدد",
+		"expiresAtLabel": "ينتهي في",
+		"noLinkYet": "أنشئ رابطاً لعرض رابط شاشة الاستقبال العام هنا.",
+		"noDoctorSelected": "لم يتم اختيار طبيب",
+		"noExpiryYet": "لم يتم الإنشاء بعد",
+		"loadDoctorsErrorTitle": "تعذر تحميل الأطباء",
+		"loadDoctorsError": "حاول مرة أخرى بعد اكتمال تحميل دليل الأطباء.",
+		"qrTitle": "رمز QR",
+		"qrDescription": "امسح الرمز لفتح رابط شاشة الاستقبال نفسه الصادر من الخادم.",
+		"qrAlt": "رمز QR لشاشة الاستقبال",
+		"qrEmpty": "أنشئ رابط شاشة استقبال أولاً لعرض رمز QR.",
+		"qrHint": "استخدم هذا الرمز قرب الاستقبال أو في التعليمات الداخلية للوصول السريع.",
+		"guidanceTitle": "طريقة الاستخدام",
+		"guidanceDescription": "هذه الصفحة مخصصة لموظفي الاستقبال والمشرفين الذين يديرون شاشة غرفة الانتظار.",
+		"guidanceMonitor": "افتح رابط شاشة الاستقبال المُنشأ على تلفاز أو شاشة العيادة واترك التبويب نشطاً أثناء ساعات العمل.",
+		"guidanceQr": "شارك رمز QR داخل العيادة فقط إذا أردت أن يتابع المرضى نفس عرض الطابور العام من هواتفهم.",
+		"guidancePrivacy": "تعرض شاشة الاستقبال أرقاماً مجهولة في الطابور وأوقات المواعيد فقط، ولا تعرض أسماء المرضى أبداً.",
+		"unavailable": "غير متاح"
+	},
+	"auditLog": {
+		"page": {
+			"title": "سجل التدقيق",
+			"subtitle": "راجع الأنشطة ذات الصلاحيات العالية الأخيرة"
+		},
+		"actions": {
+			"refresh": "تحديث",
+			"reset": "إعادة الضبط",
+			"retry": "إعادة المحاولة",
+			"previous": "السابق",
+			"next": "التالي",
+			"viewDetails": "عرض التفاصيل",
+			"appointment.cancel": "إلغاء الموعد",
+			"APPOINTMENT_CREATED": "تم إنشاء موعد",
+			"APPOINTMENT_RESCHEDULED": "تمت إعادة جدولة موعد",
+			"APPOINTMENT_STATUS_UPDATED": "تم تحديث حالة موعد",
+			"APPOINTMENT_CANCELED": "تم إلغاء موعد",
+			"USER_CREATED": "تم إنشاء مستخدم",
+			"USER_UPDATED": "تم تحديث مستخدم",
+			"USER_DISABLED": "تم تعطيل مستخدم",
+			"USER_PASSWORD_CHANGED": "تم تغيير كلمة مرور",
+			"DOCTOR_CREATED": "تم إنشاء طبيب",
+			"DOCTOR_UPDATED": "تم تحديث طبيب",
+			"SCHEDULE_OVERRIDE_CREATED": "تم إنشاء استثناء جدول",
+			"SCHEDULE_OVERRIDE_DELETED": "تم حذف استثناء جدول",
+			"CLINIC_CONFIG_UPDATED": "تم تحديث إعدادات العيادة",
+			"WORKING_HOURS_UPDATED": "تم تحديث ساعات العمل",
+			"HOLIDAY_CREATED": "تم إنشاء عطلة",
+			"HOLIDAY_DELETED": "تم حذف عطلة",
+			"WAITLIST_ENTRY_UPDATED": "تم تحديث إدخال قائمة الانتظار",
+			"WAITLIST_ENTRY_DELETED": "تم حذف إدخال قائمة الانتظار",
+			"WAITLIST_OFFER_CREATED": "تم إنشاء عرض قائمة الانتظار",
+			"WAITLIST_OFFER_EXPIRED": "انتهت صلاحية عرض قائمة الانتظار"
+		},
+		"filters": {
+			"from": "من",
+			"to": "إلى",
+			"actorId": "معرّف الفاعل",
+			"actorIdPlaceholder": "تصفية حسب معرّف الفاعل",
+			"actorName": "اسم الفاعل",
+			"actorNamePlaceholder": "تصفية حسب الاسم",
+			"action": "الإجراء",
+			"actionPlaceholder": "مفاتيح الإجراءات مفصولة بفواصل",
+			"targetType": "نوع الهدف",
+			"targetTypePlaceholder": "أنواع الأهداف مفصولة بفواصل",
+			"targetId": "معرّف الهدف",
+			"targetIdPlaceholder": "تصفية حسب معرّف الهدف"
+		},
+		"table": {
+			"time": "الوقت",
+			"actor": "الفاعل",
+			"action": "الإجراء",
+			"targetType": "الهدف",
+			"summary": "الملخص",
+			"details": "التفاصيل"
+		},
+		"pagination": {
+			"pageSize": "الصفوف",
+			"pageInfo": "الصفحة {{page}} من {{totalPages}}"
+		},
+		"status": {
+			"refreshing": "جارٍ تحديث النتائج الحالية..."
+		},
+		"details": {
+			"title": "تفاصيل سجل التدقيق",
+			"actor": "الفاعل",
+			"action": "الإجراء",
+			"target": "الهدف",
+			"timestamp": "الطابع الزمني",
+			"payload": "الحمولة"
+		},
+		"empty": {
+			"title": "لا توجد إدخالات في سجل التدقيق",
+			"description": "حاول إزالة المرشحات أو تحديث السجل."
+		},
+		"error": {
+			"title": "تعذر تحميل سجل التدقيق",
+			"description": "فشلت أحدث محاولة تحميل، لكن الصفحة بقيت آمنة وللقراءة فقط."
+		},
+		"payload": {
+			"empty": "لا توجد حمولة متاحة",
+			"showMore": "عرض المزيد",
+			"showLess": "عرض أقل"
+		},
+		"unknownActor": "فاعل غير معروف",
+		"noTargetId": "لا يوجد معرّف للهدف"
+	},
+	"doctorsAdmin": {
+		"page": {
+			"title": "الأطباء",
+			"subtitle": "إدارة ملفات الأطباء وتجاوزات الجدول"
+		},
+		"tabs":{
+			"overrides":"التجاوزات",
+			"profile":"الملف الشخصي"
+		},
+		"actions": {
+			"createDoctor": "إنشاء طبيب",
+			"create": "إنشاء",
+			"saveChanges": "حفظ التغييرات",
+			"cancel": "إلغاء",
+			"refresh": "تحديث",
+			"reset": "إعادة الضبط",
+			"retry": "إعادة المحاولة",
+			"previous": "السابق",
+			"next": "التالي",
+			"viewProfile": "عرض الملف",
+			"selected": "محدد",
+			"back": "رجوع",
+			"addOverride": "إضافة تجاوز",
+			"delete": "حذف",
+			"deleting": "جارٍ الحذف..."
+		},
+		"status": {
+			"active": "نشط",
+			"inactive": "غير نشط"
+		},
+		"directory": {
+			"title": "دليل الأطباء",
+			"search": "بحث",
+			"searchPlaceholder": "ابحث عن الأطباء",
+			"specialization": "التخصص",
+			"specializationPlaceholder": "تصفية حسب التخصص",
+			"status": "الحالة",
+			"statusAll": "الكل",
+			"statusActive": "نشط",
+			"statusInactive": "غير نشط",
+			"errorTitle": "تعذر تحميل الأطباء",
+			"errorDescription": "حاول تحديث الدليل.",
+			"emptyTitle": "لا يوجد أطباء",
+			"emptyDescription": "عدّل المرشحات أو أزلها لعرض الدليل الكامل.",
+			"page": "الصفحة {{page}} من {{totalPages}}",
+			"notSet": "غير محدد",
+			"derivedAvailability": "مشتق من ساعات العيادة"
+		},
+		"detail": {
+			"loading": "جارٍ تحميل تفاصيل الطبيب...",
+			"noSelectionTitle": "لم يتم اختيار طبيب",
+			"noSelectionDescription": "اختر طبيباً من الدليل لعرض التفاصيل."
+		},
+		"profile": {
+			"createTitle": "إنشاء طبيب",
+			"editTitle": "تعديل الملف",
+			"firstName": "الاسم الأول",
+			"lastName": "اسم العائلة",
+			"email": "البريد الإلكتروني",
+			"phone": "الهاتف",
+			"specialization": "التخصص",
+			"bio": "السيرة الذاتية",
+			"active": "نشط"
+		},
+		"createDialog": {
+			"title": "إنشاء ملف طبيب",
+			"description": "أضف حساباً وملفاً جديداً لطبيب."
+		},
+		"overrideForm": {
+			"title": "إضافة تجاوز",
+			"date": "التاريخ",
+			"unavailableAllDay": "غير متاح طوال اليوم",
+			"startTime": "وقت البداية",
+			"endTime": "وقت النهاية",
+			"reason": "السبب"
+		},
+		"overrideList": {
+			"title": "التجاوزات",
+			"errorTitle": "تعذر تحميل التجاوزات",
+			"errorDescription": "حاول مرة أخرى بعد تحديث تفاصيل الطبيب.",
+			"emptyTitle": "لا توجد تجاوزات حتى الآن",
+			"emptyDescription": "أضف تجاوزاً لجدول هذا الطبيب."
+		},
+		"deleteDialog": {
+			"title": "حذف التجاوز؟",
+			"description": "سيؤدي هذا إلى إزالة تجاوز الجدول المحدد."
+		},
+		"errors": {
+			"firstNameRequired": "الاسم الأول مطلوب",
+			"lastNameRequired": "اسم العائلة مطلوب",
+			"invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صالح",
+			"invalidPhone": "يرجى إدخال رقم هاتف صالح",
+			"nameTooLong": "الاسم طويل جداً",
+			"specializationTooLong": "التخصص طويل جداً",
+			"bioTooLong": "السيرة الذاتية طويلة جداً",
+			"dateRequired": "التاريخ مطلوب",
+			"invalidDate": "يرجى إدخال تاريخ صالح",
+			"invalidTime": "يرجى إدخال وقت صالح",
+			"endAfterStart": "يجب أن يكون وقت النهاية بعد وقت البداية",
+			"pastDate": "لا يُسمح بالتواريخ السابقة",
+			"reasonTooLong": "السبب طويل جداً",
+			"createFailed": "تعذر إنشاء الطبيب",
+			"updateFailed": "تعذر تحديث الطبيب",
+			"createOverrideFailed": "تعذر إنشاء التجاوز",
+			"deleteOverrideFailed": "تعذر حذف التجاوز"
+		},
+		"success": {
+			"updateProfile": "تم تحديث الملف الشخصي بنجاح",
+			"createOverride": "تم إضافة استثناء الجدول بنجاح",
+			"deleteOverride": "تم حذف استثناء الجدول بنجاح"
+		}
+	},
+	"usersAdmin": {
+		"page": { "title": "المستخدمون", "subtitle": "إدارة حسابات العيادة والأدوار وتفضيلات اللغة وحالة الحساب" },
+		"actions": { "createUser": "إنشاء مستخدم", "create": "إنشاء", "save": "حفظ التغييرات", "saving": "جارٍ الحفظ...", "edit": "تعديل", "disable": "تعطيل", "disableSelfBlocked": "التعطيل غير متاح", "disabling": "جارٍ التعطيل...", "enable": "تفعيل", "enabling": "جارٍ التفعيل...", "cancel": "إلغاء", "reset": "إعادة الضبط", "retry": "إعادة المحاولة", "previous": "السابق", "next": "التالي", "actions": "الإجراءات" },
+		"filters": { "search": "بحث", "searchPlaceholder": "ابحث بالاسم أو البريد أو الهاتف", "role": "الدور", "status": "الحالة", "language": "اللغة", "sortBy": "الترتيب حسب", "sortDir": "اتجاه الترتيب", "defaultSort": "الترتيب الافتراضي", "all": "الكل" },
+		"columns": { "name": "الاسم", "email": "البريد الإلكتروني", "phone": "الهاتف", "role": "الدور", "status": "الحالة", "language": "اللغة", "createdAt": "تاريخ الإنشاء", "actions": "الإجراءات" },
+		"roles": { "PATIENT": "مريض", "DOCTOR": "طبيب", "RECEPTIONIST": "استقبال", "ADMIN": "مدير" },
+		"status": { "active": "نشط", "disabled": "معطّل" },
+		"language": { "en": "الإنجليزية", "ar": "العربية" },
+		"sort": { "name": "الاسم", "email": "البريد الإلكتروني", "role": "الدور", "createdAt": "تاريخ الإنشاء", "asc": "تصاعدي", "desc": "تنازلي" },
+		"pagination": { "page": "الصفحة {{page}} من {{totalPages}}" },
+		"table": { "errorTitle": "تعذر تحميل المستخدمين", "errorDescription": "حاول تحديث الصفحة.", "emptyTitle": "لا يوجد مستخدمون بعد", "emptyDescription": "أنشئ أول حساب في العيادة للبدء.", "noResultsTitle": "لا توجد نتائج مطابقة", "noResultsDescription": "عدّل البحث أو أزل المرشحات." },
+		"dialog": { "createTitle": "إنشاء مستخدم", "createDescription": "أضف حساباً جديداً للعيادة.", "editTitle": "تعديل المستخدم", "editDescription": "تحديث الحساب المحدد." },
+		"disableDialog": { "title": "تعطيل المستخدم؟", "description": "تعطيل {{name}} ({{email}})؟ لن يتمكن بعد الآن من تسجيل الدخول.", "fallback": "تعطيل المستخدم المحدد؟" },
+		"form": { "firstName": "الاسم الأول", "lastName": "اسم العائلة", "email": "البريد الإلكتروني", "phone": "الهاتف", "role": "الدور", "languagePreference": "اللغة", "password": "كلمة مرور مؤقتة", "doctorRoleNoteTitle": "ملاحظة دور الطبيب", "doctorRoleNote": "قد يتطلب إنشاء حساب طبيب إعداد ملف طبيب منفصل أيضاً.", "selfRoleLocked": "لا يمكنك تخفيض دورك من هذه الشاشة.", "hintTitle": "تنبيه" },
+		"errors": { "submitTitle": "تعذر حفظ المستخدم", "loadTitle": "تعذر تحميل المستخدمين", "loadDescription": "حاول مرة أخرى بعد قليل." },
+		"success": { "create": "تم إنشاء المستخدم بنجاح", "update": "تم تحديث المستخدم بنجاح", "disable": "تم تعطيل المستخدم بنجاح", "enable": "تم تفعيل المستخدم بنجاح" }
+	},
+	"adminDashboard": {
+		"title": "لوحة تحكم المدير",
+		"subtitle": "نظرة تشغيلية عامة لمشرفي العيادة",
+		"filters": {
+			"title": "المرشحات",
+			"from": "من",
+			"to": "إلى",
+			"doctorId": "الطبيب",
+			"doctorAll": "كل الأطباء",
+			"doctorSearchPlaceholder": "ابحث عن طبيب",
+			"doctorLoading": "جارٍ تحميل الأطباء...",
+			"doctorEmpty": "لم يتم العثور على أطباء",
+			"status": "الحالة",
+			"patientName": "اسم المريض",
+			"bucket": "التجميع",
+			"apply": "تطبيق المرشحات",
+			"reset": "إعادة الضبط"
+		},
+		"kpi": {
+			"totalAppointments": "إجمالي المواعيد",
+			"completed": "المواعيد المكتملة",
+			"cancellationRate": "معدل الإلغاء",
+			"noShowRate": "معدل عدم الحضور",
+			"activePatients": "المرضى النشطون",
+			"waitlistSize": "حجم قائمة الانتظار",
+			"currentPeriod": "الفترة الحالية"
+		},
+		"charts": {
+			"trends": "اتجاهات المواعيد",
+			"statusDistribution": "توزيع الحالات",
+			"doctorUtilization": "استغلال الأطباء",
+			"busiestDays": "أكثر الأيام ازدحاماً",
+			"cancellationTrends": "اتجاهات الإلغاء",
+			"canceledByPatient": "ألغاه المريض",
+			"canceledByStaff": "ألغاه الموظف",
+			"waitlistSummary": "ملخص قائمة الانتظار"
+		},
+		"waitlistSummary": {
+			"totalActive": "إجمالي النشط",
+			"empty": "لا توجد عناصر نشطة في قائمة الانتظار حالياً",
+			"doctorCount": "الأطباء ذوو قائمة انتظار نشطة"
+		},
+		"tabs": {
+			"appointments": "المواعيد",
+			"followUps": "المتابعات",
+			"waitlist": "قائمة الانتظار"
+		},
+		"bucket": {
+			"auto": "تلقائي",
+			"day": "يومي",
+			"week": "أسبوعي",
+			"month": "شهري"
+		},
+		"status": {
+			"PENDING": "قيد الانتظار",
+			"CONFIRMED": "مؤكد",
+			"IN_PROGRESS": "قيد التنفيذ",
+			"COMPLETED": "مكتمل",
+			"CANCELED": "ملغى",
+			"NO_SHOW": "لم يحضر"
+		},
+		"export": {
+			"export": "تصدير CSV",
+			"exporting": "جارٍ التصدير..."
+		},
+		"table": {
+			"empty": "لا توجد سجلات",
+			"page": "صفحة الجدول",
+			"previous": "السابق",
+			"next": "التالي",
+			"appointments": {
+				"from": "تاريخ الموعد",
+				"to": "وقت الموعد",
+				"doctor": "الطبيب",
+				"patient": "المريض",
+				"status": "الحالة",
+				"bookedAt": "وقت الحجز",
+				"action": "إجراء",
+				"cancel": "إلغاء الموعد",
+				"canceling": "جارٍ إلغاء الموعد...",
+				"noActions": "لا توجد إجراءات"
+			},
+			"followUps": {
+				"patient": "المريض",
+				"lastAppointment": "آخر موعد",
+				"daysSince": "الأيام منذ الموعد",
+				"upcoming": "موعد قادم",
+				"action": "حجز",
+				"threshold": "عدد الايام منذ اخر زيارة",
+				"updateThreshold": "تحديث"
+			},
+			"waitlist": {
+				"position": "الترتيب",
+				"patient": "المريض",
+				"doctor": "الطبيب",
+				"availabilityWindow": "نافذة التوفر",
+				"joined": "تاريخ الانضمام",
+				"action": "إزالة"
+			}
+		},
+		"scheduling": {
+			"action": "جدولة متابعة",
+			"title": "جدولة متابعة",
+			"description": "اختر موعداً مستقبلياً لهذا الموعد المكتمل وأدخل تفاصيل الجدولة.",
+			"source": {
+				"patient": "المريض",
+				"doctor": "الطبيب",
+				"time": "وقت الموعد الأصلي"
+			},
+			"dateLabel": "تاريخ المتابعة",
+			"reasonLabel": "السبب",
+			"notesLabel": "ملاحظات (اختياري)",
+			"cancel": "إلغاء",
+			"submit": "جدولة المتابعة",
+			"pending": "جارٍ الجدولة...",
+			"success": "تمت جدولة المتابعة بنجاح",
+			"errorTitle": "تعذر جدولة المتابعة",
+			"loadingSlots": "جارٍ تحميل المواعيد المتاحة...",
+			"emptySlots": "لا توجد مواعيد مستقبلية متاحة لهذا التاريخ.",
+			"retry": "إعادة المحاولة",
+			"slotGroups": {
+				"morning": "صباحاً",
+				"afternoon": "بعد الظهر",
+				"evening": "مساءً"
+			},
+			"errors": {
+				"slotRequired": "اختر موعداً مستقبلياً",
+				"reasonRequired": "أدخل سبباً",
+				"reasonTooLong": "يجب ألا يتجاوز السبب 500 حرف",
+				"notesTooLong": "يجب ألا تتجاوز الملاحظات 2000 حرف",
+				"slotsUnavailableTitle": "المواعيد غير متاحة",
+				"slotsUnavailable": "تعذر تحميل المواعيد المتاحة الآن.",
+				"invalidPayload": "تم رفض تفاصيل المتابعة.",
+				"permissionDenied": "ليس لديك صلاحية لجدولة هذه المتابعة.",
+				"notFound": "تعذر العثور على الموعد الأصلي أو بيانات العيادة.",
+				"conflict": "هذا الموعد لم يعد متاحاً. يرجى اختيار موعد آخر.",
+				"network": "حدث خطأ في الشبكة. يرجى المحاولة مرة أخرى."
+			}
+		},
+		"errors": {
+			"chart": "فشل تحميل هذا المخطط",
+			"table": "فشل تحميل هذا الجدول",
+			"retry": "إعادة المحاولة"
+		}
+	},
+	"followUps": {
+		"scheduling": {
+			"action": "جدولة متابعة",
+			"title": "جدولة متابعة",
+			"description": "اختر موعداً مستقبلياً لهذا الموعد المكتمل وأدخل تفاصيل الجدولة.",
+			"source": {
+				"patient": "المريض",
+				"doctor": "الطبيب",
+				"time": "وقت الموعد الأصلي"
+			},
+			"dateLabel": "تاريخ المتابعة",
+			"reasonLabel": "السبب",
+			"notesLabel": "ملاحظات (اختياري)",
+			"cancel": "إلغاء",
+			"submit": "جدولة المتابعة",
+			"pending": "جارٍ الجدولة...",
+			"success": "تمت جدولة المتابعة بنجاح",
+			"errorTitle": "تعذر جدولة المتابعة",
+			"loadingSlots": "جارٍ تحميل المواعيد المتاحة...",
+			"emptySlots": "لا توجد مواعيد مستقبلية متاحة لهذا التاريخ.",
+			"retry": "إعادة المحاولة",
+			"slotGroups": {
+				"morning": "صباحاً",
+				"afternoon": "بعد الظهر",
+				"evening": "مساءً"
+			},
+			"errors": {
+				"slotRequired": "اختر موعداً مستقبلياً",
+				"reasonRequired": "أدخل سبباً",
+				"reasonTooLong": "يجب ألا يتجاوز السبب 500 حرف",
+				"notesTooLong": "يجب ألا تتجاوز الملاحظات 2000 حرف",
+				"slotsUnavailableTitle": "المواعيد غير متاحة",
+				"slotsUnavailable": "تعذر تحميل المواعيد المتاحة الآن.",
+				"invalidPayload": "تم رفض تفاصيل المتابعة.",
+				"permissionDenied": "ليس لديك صلاحية لجدولة هذه المتابعة.",
+				"notFound": "تعذر العثور على الموعد الأصلي أو بيانات العيادة.",
+				"conflict": "هذا الموعد لم يعد متاحاً. يرجى اختيار موعد آخر.",
+				"network": "حدث خطأ في الشبكة. يرجى المحاولة مرة أخرى."
+			}
+		}
+	},
+	"shell": {
+		"userMenu": {
+			"viewProfile": "عرض الملف الشخصي",
+			"role": "الدور",
+			"signOut": "تسجيل الخروج"
+		},
+		"header": {
+			"openMenu": "فتح القائمة",
+			"closeMenu": "إغلاق القائمة"
+		},
+		"error": {
+			"title": "حدث خطأ ما",
+			"description": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.",
+			"retry": "إعادة المحاولة",
+			"goHome": "الذهاب إلى الرئيسية"
+		},
+		"loading": {
+			"label": "جارٍ تحميل المحتوى"
+		},
+		"skipToContent": "تخطي إلى المحتوى الرئيسي"
+	},
+	"accessDenied": {
+		"title": "الوصول مرفوض",
+		"description": "ليس لديك صلاحية لعرض هذه الصفحة.",
+		"homeLink": "الذهاب إلى الرئيسية"
+	},
+	"auth": {
+		"signIn": "تسجيل الدخول",
+		"email": "البريد الإلكتروني",
+		"password": "كلمة المرور",
+		"emailPlaceholder": "أدخل بريدك الإلكتروني",
+		"passwordPlaceholder": "أدخل كلمة المرور",
+		"forgotPassword-login": "نسيت كلمة المرور؟",
+		"noAccount": "إنشاء حساب",
+		"showPassword": "إظهار كلمة المرور",
+		"hidePassword": "إخفاء كلمة المرور",
+		"register": {
+			"title": "أنشئ حسابك",
+			"subtitle": "احجز مواعيدك في دقائق",
+			"firstName": "الاسم الأول",
+			"lastName": "اسم العائلة",
+			"email": "البريد الإلكتروني",
+			"password": "كلمة المرور",
+			"confirmPassword": "تأكيد كلمة المرور",
+			"phoneNumberOptional": "رقم الهاتف (اختياري)",
+			"dateOfBirthOptional": "تاريخ الميلاد (اختياري)",
+			"consentText": "أوافق على شروط الخدمة وسياسة الخصوصية",
+			"submit": "إنشاء الحساب",
+			"hasAccount": "هل لديك حساب بالفعل؟",
+			"signIn": "تسجيل الدخول",
+			"emailConflictAction": "سجّل الدخول بدلاً من ذلك",
+			"showPassword": "إظهار كلمة المرور",
+			"hidePassword": "إخفاء كلمة المرور",
+			"showConfirmPassword": "إظهار تأكيد كلمة المرور",
+			"hideConfirmPassword": "إخفاء تأكيد كلمة المرور"
+		},
+		"resetPassword": {
+			"title": "تعيين كلمة مرور جديدة",
+			"subtitle": "أدخل كلمة المرور الجديدة وأكدها أدناه.",
+			"newPassword": "كلمة المرور الجديدة",
+			"confirmPassword": "تأكيد كلمة المرور الجديدة",
+			"newPasswordPlaceholder": "أدخل كلمة المرور الجديدة",
+			"confirmPasswordPlaceholder": "أكد كلمة المرور الجديدة",
+			"submit": "إعادة تعيين كلمة المرور",
+			"showNewPassword": "إظهار كلمة المرور الجديدة",
+			"hideNewPassword": "إخفاء كلمة المرور الجديدة",
+			"showConfirmPassword": "إظهار تأكيد كلمة المرور",
+			"hideConfirmPassword": "إخفاء تأكيد كلمة المرور",
+			"invalidLinkTitle": "الرابط غير صالح أو منتهي الصلاحية",
+			"invalidLinkMessage": "رابط إعادة تعيين كلمة المرور غير صالح أو انتهت صلاحيته.",
+			"requestNewLink": "طلب رابط جديد",
+			"successTitle": "تم تحديث كلمة المرور",
+			"successMessage": "تم تحديث كلمة المرور الخاصة بك. سيتم توجيهك إلى تسجيل الدخول قريباً.",
+			"signInNow": "تسجيل الدخول الآن",
+			"redirectingIn": "جارٍ التوجيه إلى تسجيل الدخول خلال {{seconds}}ث\u2026"
+		},
+		"forgotPassword": {
+			"title": "نسيت كلمة المرور؟",
+			"subtitle": "أدخل بريدك الإلكتروني وسنرسل رابط إعادة تعيين إذا كان الحساب موجوداً.",
+			"email": "البريد الإلكتروني",
+			"submit": "إرسال رابط الاستعادة",
+			"backToSignIn": "العودة إلى تسجيل الدخول →",
+			"successTitle": "تحقق من بريدك الإلكتروني",
+			"successMessage": "إذا كان هناك حساب مرتبط بـ {{email}}، فقد تم إرسال رابط إعادة التعيين. تحقق من مجلد الرسائل المزعجة أيضاً.",
+			"sendAgain": "إرسال مرة أخرى",
+			"sendAgainCooldown": "إرسال مرة أخرى ({{seconds}}ث)"
+		},
+		"errors": {
+			"invalidEmail": "يرجى إدخال عنوان بريد إلكتروني صالح",
+			"passwordRequired": "كلمة المرور مطلوبة",
+			"invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+			"accountDisabled": "تم تعطيل حسابك. يرجى التواصل مع الدعم.",
+			"rateLimited": "محاولات كثيرة جداً. يرجى المحاولة مجدداً بعد 15 دقيقة.",
+			"networkError": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+			"emailRequired": "يرجى إدخال عنوان بريدك الإلكتروني",
+			"firstNameRequired": "الاسم الأول مطلوب",
+			"lastNameRequired": "اسم العائلة مطلوب",
+				"passwordTooShort": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل",
+				"passwordUppercaseRequired": "يجب أن تتضمن كلمة المرور حرفًا كبيرًا واحدًا على الأقل",
+				"passwordDigitRequired": "يجب أن تتضمن كلمة المرور رقمًا واحدًا على الأقل",
+				"firstNameTooLong": "يجب ألا يتجاوز الاسم الأول 50 حرفًا",
+				"lastNameTooLong": "يجب ألا يتجاوز اسم العائلة 50 حرفًا",
+				"passwordMismatch": "كلمتا المرور غير متطابقتين",
+			"invalidPhone": "يرجى إدخال رقم هاتف صحيح",
+			"invalidDOB": "يرجى إدخال تاريخ ميلاد صحيح ويجب أن يكون عمرك 16 سنة على الأقل",
+			"consentRequired": "يجب الموافقة على شروط الخدمة وسياسة الخصوصية",
+			"emailConflict": "يوجد حساب مرتبط بهذا البريد الإلكتروني.",
+			"resetFailed": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+		}
+	},
+	"booking": {
+		"title": "حجز موعد",
+		"sections": {
+			"doctor": "اختر طبيباً",
+			"dateTime": "اختر التاريخ والوقت",
+			"summary": "مراجعة وتأكيد"
+		},
+		"clinicContext": {
+			"title": "سياق وقت العيادة",
+			"slotDuration": "مدة الموعد: {{minutes}} دقيقة",
+			"timezone": "توقيت العيادة: {{timezone}}"
+		},
+		"steps": {
+			"doctor": "الطبيب",
+			"date": "التاريخ",
+			"time": "الوقت",
+			"confirm": "التأكيد"
+		},
+		"slotGroups": {
+			"morning": "صباحاً",
+			"afternoon": "بعد الظهر",
+			"evening": "مساءً"
+		},
+		"summary": {
+			"title": "ملخص الموعد",
+			"doctor": "الطبيب",
+			"date": "التاريخ",
+			"time": "وقت الموعد",
+			"timezoneNote": "جميع الأوقات معروضة بتوقيت العيادة (Asia/Riyadh).",
+			"confirmButton": "تأكيد الحجز",
+			"cancellationNote": "يمكنك إلغاء أو إعادة جدولة الموعد حتى 24 ساعة قبل الموعد."
+		},
+		"confirmation": {
+			"title": "تأكيد موعدك",
+			"subtitle": "يرجى مراجعة التفاصيل قبل التأكيد.",
+			"cancel": "إلغاء",
+			"submit": "حجز الموعد"
+		},
+		"success": "تم حجز الموعد بنجاح!",
+		"errors": {
+			"slotTaken": "هذا الوقت لم يعد متاحاً. يرجى اختيار وقت آخر.",
+			"validationFailed": "طلب حجز غير صالح. يرجى التحقق من اختيارك.",
+			"generic": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+			"noDoctors": "لا يوجد أطباء متاحين حالياً.",
+			"noSpecialization": "التخصص غير مذكور",
+			"noBio": "السيرة غير متوفرة",
+			"noSlots": "لا توجد أوقات متاحة لهذا التاريخ.",
+			"waitlistLink": "الانضمام لقائمة الانتظار لـ {{doctorName}}",
+			"doctorsFailed": "تعذر تحميل قائمة الأطباء. يرجى المحاولة مرة أخرى.",
+			"slotsFailed": "تعذر تحميل الأوقات المتاحة. يرجى المحاولة مرة أخرى.",
+			"retry": "إعادة المحاولة"
+		},
+		"slotStates": {
+			"available": "متاح",
+			"reserved": "محجوز",
+			"joinWaitlist": "الانضمام لقائمة الانتظار"
+		},
+		"doctorCard": {
+			"specializationFallback": "التخصص غير مذكور",
+			"bioFallback": "السيرة غير متوفرة"
+		}
+	},
+	"walkIn": {
+		"title": "حجز الزيارة المباشرة",
+		"subtitle": "ابحث عن مريض موجود، ثم اختر الطبيب والوقت وأكِّد الحجز من قِبل الموظف.",
+		"steps": {
+			"label": "تقدم حجز الزيارة المباشرة",
+			"patient": "المريض",
+			"doctor": "الطبيب",
+			"slot": "الوقت",
+			"confirm": "التأكيد"
+		},
+		"doctorSection": {
+			"title": "اختر الطبيب",
+			"subtitle": "يمكن حجز الأطباء النشطين فقط من هذه الصفحة."
+		},
+		"slotSection": {
+			"title": "اختر التاريخ والوقت",
+			"subtitle": "اختر يوم العيادة وأحد الأوقات المتاحة."
+		},
+		"patientLookup": {
+			"title": "ابحث عن المريض",
+			"subtitle": "ابحث بالاسم أو رقم الهاتف أو البريد الإلكتروني.",
+			"searchPlaceholder": "ابحث عن المرضى",
+			"searchAriaLabel": "ابحث عن مريض موجود",
+			"guidance": "أدخل حرفين على الأقل لبدء البحث عن المرضى الموجودين.",
+			"minChars": "استمر في الكتابة للبحث.",
+			"loadingResults": "جارٍ تحميل نتائج البحث عن المرضى",
+			"loadingSelected": "جارٍ تحميل المريض المحدد",
+			"resultsLabel": "نتائج البحث عن المرضى",
+			"resultCount": "تم العثور على {{count}} مريض",
+			"selectedPatient": "المريض المحدد",
+			"active": "نشط",
+			"inactive": "غير نشط",
+			"inactiveHint": "هذا المريض غير نشط ولا يمكن حجزه.",
+			"changePatient": "تغيير المريض",
+			"noPhone": "رقم الهاتف غير متوفر",
+			"noEmail": "البريد الإلكتروني غير متوفر",
+			"noDob": "تاريخ الميلاد غير متوفر",
+			"dob": "تاريخ الميلاد: {{value}}",
+			"noContact": "لا توجد بيانات تواصل",
+			"noResults": "لا يوجد مرضى موجودون يطابقون هذا البحث.",
+			"newPatientUnavailable": "إضافة مريض جديد غير متاحة من هذه الصفحة.",
+			"errorTitle": "البحث عن المريض غير متاح",
+			"permissionRequired": "ليس لديك صلاحية البحث عن المرضى.",
+			"loadFailed": "تعذّر تحميل نتائج المرضى. يرجى المحاولة مرة أخرى.",
+			"warningTitle": "تحذير المريض"
+		},
+		"summary": {
+			"title": "ملخص الحجز",
+			"patient": "المريض",
+			"doctor": "الطبيب",
+			"date": "التاريخ",
+			"time": "الوقت",
+			"note": "ملاحظة الموظف",
+			"notePlaceholder": "ملاحظة اختيارية لفريق العيادة",
+			"timezoneNote": "جميع الأوقات معروضة بتوقيت العيادة ({{timezone}}).",
+			"selectRequirements": "اختر مريضاً وطبيباً ووقتاً متاحاً للمتابعة.",
+			"confirmButton": "إنشاء الموعد",
+			"disclaimer": "أنت تحجز هذا الموعد بالنيابة عن المريض المحدد.",
+			"missingPatient": "اختر مريضاً",
+			"missingDoctor": "اختر طبيباً",
+			"missingDate": "اختر تاريخاً",
+			"missingTime": "اختر وقتاً"
+		},
+		"confirmation": {
+			"title": "تأكيد حجز الزيارة المباشرة",
+			"subtitle": "راجع تفاصيل الحجز قبل الإرسال.",
+			"disclaimer": "يتم إنشاء هذا الموعد من قِبل الموظف نيابةً عن المريض.",
+			"cancel": "إلغاء",
+			"confirm": "تأكيد الحجز"
+		},
+		"success": "تم إنشاء موعد الزيارة المباشرة بنجاح.",
+		"warnings": {
+			"title": "تحذير التحديد المسبق",
+			"invalidDate": "كان التاريخ المقدم غير صالح أو في الماضي. تم استخدام تاريخ العيادة اليوم بدلاً منه.",
+			"inactivePatient": "المريض المحدد غير نشط ولا يمكن حجزه.",
+			"patientPermissionRequired": "ليس لديك صلاحية تحميل هذا المريض.",
+			"patientNotFound": "تعذّر العثور على المريض المحدد."
+		},
+		"errors": {
+			"patientRequired": "يرجى اختيار مريض.",
+			"doctorRequired": "يرجى اختيار طبيب.",
+			"slotRequired": "يرجى اختيار وقت متاح.",
+			"noteTooLong": "يجب ألا تتجاوز ملاحظات الموظف 500 حرف.",
+			"slotTaken": "تم حجز هذا الوقت للتو. يرجى اختيار وقت آخر.",
+			"validationFailed": "تعذّر إنشاء الحجز. يرجى مراجعة التفاصيل والمحاولة مرة أخرى.",
+			"generic": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+		}
+	},
+	"appointments": {
+		"title": "مواعيدي",
+		"tabs": {
+			"label": "عروض المواعيد",
+			"queue": "الطابور",
+			"waitlist": "قائمة الانتظار",
+			"upcoming": "القادمة",
+			"past": "السابقة",
+			"canceled": "الملغاة"
+		},
+		"filters": {
+			"doctor": "الطبيب",
+			"statuses": "الحالة",
+			"allDoctors": "كل الأطباء",
+			"clear": "مسح التصفية",
+			"sortBy": "ترتيب حسب",
+			"sortDir": "اتجاه الترتيب",
+			"startsAt": "وقت البدء",
+			"createdAt": "تاريخ الحجز",
+			"asc": "تصاعدي",
+			"desc": "تنازلي"
+		},
+		"status": {
+			"pending": "قيد الانتظار",
+			"confirmed": "مؤكد",
+			"inProgress": "جارٍ التنفيذ",
+			"completed": "مكتمل",
+			"canceled": "ملغى",
+			"noShow": "لم يحضر"
+		},
+		"loading": {
+			"previous": "تبقى المواعيد السابقة ظاهرة أثناء تحديث عوامل التصفية."
+		},
+		"errors": {
+			"title": "تعذر تحميل المواعيد",
+			"loadFailed": "أعد المحاولة لتحميل مواعيدك.",
+			"retry": "إعادة المحاولة",
+			"notOwned": "لا يمكن إلغاء هذا الموعد لأنه لا يخصك.",
+			"tooLate": "يمكن إلغاء هذا الموعد قبل 24 ساعة على الأقل من بدايته.",
+			"network": "تعذر إكمال الإلغاء. يرجى المحاولة مرة أخرى."
+		},
+		"empty": {
+			"upcoming": {
+				"title": "لا توجد مواعيد قادمة",
+				"description": "ستظهر مواعيدك القادمة هنا."
+			},
+			"past": {
+				"title": "لا توجد مواعيد سابقة",
+				"description": "ستظهر المواعيد المكتملة والتي فاتتك هنا."
+			},
+			"canceled": {
+				"title": "لا توجد مواعيد ملغاة",
+				"description": "ستظهر المواعيد الملغاة هنا."
+			},
+			"filtered": {
+				"title": "لا توجد مواعيد مطابقة",
+				"description": "لا توجد مواعيد تطابق عوامل التصفية المحددة."
+			}
+		},
+		"actions": {
+			"bookNew": "حجز جديد",
+			"cancel": "إلغاء"
+		},
+		"highlight": {
+			"recent": "محجوز حديثاً"
+		},
+		"card": {
+			"doctor": "الطبيب",
+			"date": "التاريخ",
+			"time": "الوقت",
+			"bookingDate": "تاريخ الحجز",
+			"noSpecialization": "التخصص غير مذكور"
+		},
+		"cancellation": {
+			"notice": "يمكن إلغاء هذا الموعد قبل 24 ساعة على الأقل من بدايته."
+		},
+		"dialog": {
+			"title": "إلغاء الموعد",
+			"description": "لا يمكن التراجع عن هذا الإجراء. قد يؤدي الإلغاء إلى إتاحة هذا الموعد لمريض آخر في قائمة الانتظار.",
+			"confirm": "تأكيد الإلغاء",
+			"cancel": "الإبقاء على الموعد",
+			"retry": "جارٍ الإلغاء...",
+			"pending": "جارٍ الإلغاء...",
+			"success": "تم إلغاء الموعد بنجاح."
+		},
+		"pagination": {
+			"label": "ترقيم المواعيد",
+			"previous": "السابق",
+			"next": "التالي",
+			"page": "الصفحة {{page}} من {{totalPages}}"
+		},
+		"waitlist": {
+			"title": "قائمة الانتظار",
+			"subtitle": "راجع إدخالات قائمة الانتظار النشطة وأزلها عند الحاجة.",
+			"filters": "عوامل التصفية",
+			"doctorFilter": "تصفية الطبيب",
+			"filterAll": "كل الأطباء",
+			"position": "الترتيب",
+			"positionValue": "#{{position}}",
+			"patient": "المريض",
+			"doctor": "الطبيب",
+			"availability": "التوفر",
+			"joined": "تاريخ الانضمام",
+			"action": "إزالة",
+			"anyTime": "أي وقت متاح",
+			"empty": "لا توجد إدخالات نشطة في قائمة الانتظار.",
+			"loading": "جارٍ تحميل قائمة الانتظار...",
+			"errorTitle": "تعذر تحميل قائمة الانتظار",
+			"errorDescription": "يرجى المحاولة مرة أخرى.",
+			"refresh": "تحديث",
+			"previous": "السابق",
+			"next": "التالي",
+			"pageInfo": "الصفحة {{page}} من {{totalPages}}",
+			"removeConfirmTitle": "إزالة إدخال من قائمة الانتظار",
+			"removeConfirmDescription": "سيتم إزالة هذا المريض من قائمة الانتظار ولن يتلقى عروضاً بعد الآن.",
+			"removeConfirm": "إزالة",
+			"removeCancel": "إلغاء",
+			"removing": "جارٍ الإزالة...",
+			"removeError": "فشلت إزالة الإدخال. يرجى المحاولة مرة أخرى."
+		}
+	},
+	"profile": {
+		"title": "إعدادات الملف الشخصي",
+		"personalInfo": {
+			"sectionTitle": "المعلومات الشخصية",
+			"firstName": "الاسم الأول",
+			"lastName": "اسم العائلة",
+			"email": "البريد الإلكتروني",
+			"phoneNumber": "رقم الهاتف",
+			"dateOfBirth": "تاريخ الميلاد",
+			"preferredLocale": "اللغة المفضلة",
+			"localeEn": "الإنجليزية",
+			"localeAr": "العربية",
+			"save": "حفظ التغييرات",
+			"saveSuccess": "تم تحديث الملف الشخصي بنجاح."
+		},
+		"changePassword": {
+			"sectionTitle": "تغيير كلمة المرور",
+			"currentPassword": "كلمة المرور الحالية",
+			"newPassword": "كلمة المرور الجديدة",
+			"confirmPassword": "تأكيد كلمة المرور الجديدة",
+			"submit": "تحديث كلمة المرور",
+			"showCurrentPassword": "إظهار كلمة المرور الحالية",
+			"hideCurrentPassword": "إخفاء كلمة المرور الحالية",
+			"showNewPassword": "إظهار كلمة المرور الجديدة",
+			"hideNewPassword": "إخفاء كلمة المرور الجديدة",
+			"showConfirmPassword": "إظهار تأكيد كلمة المرور",
+			"hideConfirmPassword": "إخفاء تأكيد كلمة المرور",
+			"successToast": "تم تغيير كلمة المرور بنجاح."
+		},
+		"loading": "جارٍ تحميل الملف الشخصي...",
+		"retry": "إعادة المحاولة",
+		"errors": {
+			"firstNameRequired": "الاسم الأول مطلوب",
+			"lastNameRequired": "اسم العائلة مطلوب",
+			"invalidPhone": "يرجى إدخال رقم هاتف صحيح",
+			"invalidDOB": "يرجى إدخال تاريخ صحيح في الماضي",
+			"currentPasswordRequired": "كلمة المرور الحالية مطلوبة",
+			"passwordTooShort": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل",
+			"passwordTooLong": "يجب ألا تتجاوز كلمة المرور 72 حرفًا",
+			"passwordMissingUppercase": "يجب أن تتضمن كلمة المرور حرفًا كبيرًا واحدًا على الأقل",
+			"passwordMissingDigit": "يجب أن تتضمن كلمة المرور رقمًا واحدًا على الأقل",
+			"passwordMismatch": "كلمتا المرور غير متطابقتين",
+			"passwordSameAsCurrent": "يجب أن تختلف كلمة المرور الجديدة عن الحالية",
+			"incorrectCurrentPassword": "كلمة المرور الحالية غير صحيحة",
+			"loadFailed": "تعذّر تحميل ملفك الشخصي. يرجى المحاولة مرة أخرى.",
+			"saveFailed": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+			"passwordChangeFailed": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+		}
+	},
+	"waitlist": {
+		"title": "قائمة انتظاري",
+		"description": "تساعدك قائمة الانتظار في الحصول على عروض مواعيد مبكرة عندما تتوفر مواعيد مناسبة.",
+		"empty": "ليس لديك إدخالات نشطة في قائمة الانتظار.",
+		"anyTime": "أي وقت متاح",
+		"position": "المركز #{{position}}",
+		"joined": "انضممت في {{date}}",
+		"doctorLabel": "الطبيب",
+		"availableFrom": "متاح من",
+		"availableUntil": "متاح حتى",
+		"joinTitle": "الانضمام إلى قائمة انتظار طبيب",
+		"join": "الانضمام إلى قائمة الانتظار",
+		"edit": "تعديل",
+		"leave": "مغادرة",
+		"cancel": "إلغاء",
+		"confirm": "تأكيد",
+		"save": "حفظ",
+		"retry": "إعادة المحاولة",
+		"loadingEntries": "جارٍ تحميل قائمة الانتظار...",
+		"loadingDoctors": "جارٍ تحميل الأطباء...",
+		"errorEntries": "تعذر تحميل قائمة الانتظار. يرجى المحاولة مرة أخرى.",
+		"errorDoctors": "تعذر تحميل قائمة الأطباء. يرجى المحاولة مرة أخرى.",
+		"pending": "جارٍ المعالجة...",
+		"selectDoctor": "اختر طبيباً",
+		"joinedSuccess": "تم الانضمام إلى قائمة الانتظار بنجاح.",
+		"updatedSuccess": "تم تحديث نافذة التوفر.",
+		"leftSuccess": "تمت مغادرة قائمة الانتظار.",
+		"alreadyJoined": "أنت بالفعل في قائمة انتظار هذا الطبيب.",
+		"leaveTitle": "مغادرة قائمة الانتظار",
+		"leaveDescription": "هل أنت متأكد أنك تريد مغادرة قائمة الانتظار هذه؟ ستتوقف عن تلقي عروض المواعيد المبكرة لهذا الطبيب.",
+		"offerAvailable": "عرض موعد مبكر متاح",
+		"viewOffer": "عرض العرض",
+		"errors": {
+			"doctorRequired": "يرجى اختيار طبيب.",
+			"windowIncomplete": "يرجى إدخال وقتي البداية والنهاية، أو ترك كليهما فارغين.",
+			"windowInvalid": "يجب أن يكون وقت النهاية بعد وقت البداية.",
+			"joinFailed": "فشل الانضمام إلى قائمة الانتظار. يرجى المحاولة مرة أخرى.",
+			"updateFailed": "فشل تحديث التوفر. يرجى المحاولة مرة أخرى.",
+			"leaveFailed": "فشلت مغادرة قائمة الانتظار. يرجى المحاولة مرة أخرى."
+		}
+	},
+	"staffQueue": {
+		"title": "طابور الموظفين",
+		"subtitle": "تابع مواعيد اليوم وتغييرات الحالة وحركة الأطباء مباشرة.",
+		"live": "مباشر",
+		"updatedAt": "تم التحديث عند {{time}}",
+		"reconnecting": "جارٍ إعادة الاتصال...",
+		"queueItems": "موعد",
+		"charts": {
+			"byDoctor": "اليوم حسب الطبيب",
+			"statusOverview": "نظرة عامة على الحالات"
+		},
+		"filters": {
+			"search": "ابحث باسم المريض أو الهاتف",
+			"doctors": "الأطباء",
+			"statuses": "الحالات",
+			"clear": "مسح الفلاتر",
+			"refresh": "تحديث"
+		},
+		"status": {
+			"PENDING": "قيد الانتظار",
+			"CONFIRMED": "تأكيد",
+			"IN_PROGRESS": "بدء",
+			"COMPLETED": "اكتمل",
+			"CANCELED": "ملغي",
+			"NO_SHOW": "لم يحضر"
+		},
+		"kpi": {
+			"total": "إجمالي المواعيد",
+			"inProgress": "قيد التنفيذ",
+			"waiting": "بانتظار الدور",
+			"completed": "مكتملة",
+			"canceledToday": "أُلغيت اليوم",
+			"noShow": "لم يحضر",
+			"pendingConfirmation": "بانتظار التأكيد",
+			"compactWarning": "يبقى الطابور مرئياً أثناء تحديث البيانات."
+		},
+		"actions": {
+			"confirm": "تأكيد",
+			"start": "بدء",
+			"complete": "إكمال",
+			"cancel": "إلغاء",
+			"noShow": "تسجيل عدم الحضور",
+			"cancelDescription": "أكد إلغاء هذا الموعد.",
+			"noShowDescription": "أكد تسجيل هذا الموعد كعدم حضور."
+		},
+		"empty": {
+			"title": "لا توجد مواعيد",
+			"description": "حاول مسح الفلاتر أو أعد المحاولة لاحقاً."
+		},
+		"errors": {
+			"loadQueue": "فشل تحميل الطابور."
+		}
+	},
+  "staffPatients": {
+    "title": "المرضى",
+    "searchPlaceholder": "ابحث بالاسم أو الهاتف أو البريد الإلكتروني",
+    "searchAriaLabel": "البحث عن مريض",
+    "resultCount": "تم العثور على {{count}} مريض",
+    "resultCountAriaLabel": "{{count}} مريض مطابق",
+    "guidance": {
+      "title": "البحث عن مريض",
+      "description": "اكتب حرفين على الأقل للبحث عن مريض بالاسم أو رقم الهاتف أو البريد الإلكتروني."
+    },
+    "loading": {
+      "results": "جارٍ البحث عن المرضى...",
+      "detail": "جارٍ تحميل تفاصيل المريض...",
+      "history": "جارٍ تحميل سجل المواعيد..."
+    },
+    "searchResults": {
+      "label": "نتائج البحث عن المرضى",
+      "noResults": "لا يوجد مرضى مطابقون لبحثك. جرب اسماً أو هاتفاً أو بريداً إلكترونياً مختلفاً.",
+      "empty": "أدخل مصطلح بحث للعثور على المرضى."
+    },
+    "card": {
+      "selectPatient": "اختيار المريض",
+      "name": "الاسم",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "dateOfBirth": "تاريخ الميلاد",
+      "activeStatus": "نشط",
+      "inactiveStatus": "غير نشط",
+      "lastAppointment": "آخر موعد",
+      "nextAppointment": "الموعد القادم",
+      "noAppointments": "لا توجد مواعيد",
+      "notProvided": "غير متوفر"
+    },
+    "detail": {
+      "title": "تفاصيل المريض",
+      "selectGuidance": "اختر مريضاً لعرض تفاصيله.",
+      "unavailable": "تفاصيل المريض غير متاحة حالياً. ربما تمت إزالة سجل المريض أو تعطيله.",
+      "identity": {
+        "label": "بيانات المريض",
+        "memberSince": "عضو منذ",
+        "languagePreference": "اللغة المفضلة",
+        "languageEn": "الإنجليزية",
+        "languageAr": "العربية"
+      },
+      "summary": {
+        "label": "ملخص المواعيد",
+        "lastAppointment": "آخر زيارة",
+        "nextAppointment": "الزيارة القادمة",
+        "noPastVisits": "لا توجد زيارات سابقة",
+        "noUpcomingVisits": "لا توجد زيارات قادمة",
+        "pastAppointmentsCount": "المواعيد السابقة",
+        "upcomingAppointmentsCount": "المواعيد القادمة"
+      },
+      "bookForPatient": "حجز موعد لهذا المريض"
+    },
+    "history": {
+      "title": "سجل المواعيد",
+      "empty": "لا يوجد سجل مواعيد لهذا المريض.",
+      "filteredZero": "لا توجد مواعيد تطابق الفلاتر المحددة.",
+      "loading": "جارٍ تحميل السجل...",
+      "error": "تعذر تحميل سجل المواعيد. يرجى المحاولة مرة أخرى.",
+      "retry": "إعادة المحاولة",
+      "clickToExpand": "انقر لتوسيع التفاصيل",
+      "needsFollowUp": "مطلوب متابعة",
+      "notes": "ملاحظات",
+      "cancellationReason": "سبب الإلغاء",
+      "noDetails": "لا توجد تفاصيل متاحة لهذا الموعد.",
+      "invalidDateRange": "يجب أن يكون تاريخ البدء قبل تاريخ الانتهاء",
+      "columns": {
+        "date": "التاريخ",
+        "time": "الوقت",
+        "duration": "المدة",
+        "durationMinutes": "{{minutes}} دقيقة",
+        "doctor": "الطبيب",
+        "info": "تفاصيل موجزة",
+        "status": "الحالة",
+        "noDoctor": "معلومات الطبيب غير متاحة"
+      },
+      "filters": {
+        "label": "فلاتر السجل",
+        "status": "الحالة",
+        "allStatuses": "جميع الحالات",
+        "fromDate": "من تاريخ",
+        "toDate": "إلى تاريخ",
+        "clearFilters": "مسح الفلاتر"
+      }
+    },
+    "status": {
+      "PENDING": "قيد الانتظار",
+      "CONFIRMED": "مؤكد",
+      "IN_PROGRESS": "جارٍ التنفيذ",
+      "COMPLETED": "مكتمل",
+      "CANCELED": "ملغى",
+      "NO_SHOW": "لم يحضر"
+    },
+    "filters": {
+      "activePatients": "المرضى النشطين فقط",
+      "allPatients": "جميع المرضى"
+    },
+    "pagination": {
+      "label": "ترقيم السجل",
+      "previous": "السابق",
+      "next": "التالي",
+      "page": "الصفحة {{page}} من {{totalPages}}"
+    },
+    "reset": "إعادة تعيين البحث",
+    "permissionRequired": "ليس لديك صلاحية للوصول إلى سجلات المرضى. يرجى التواصل مع المسؤول.",
+    "genericError": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+    "notFound": "سجل المريض غير موجود. ربما تمت إزالته أو ليس لديك صلاحية الوصول إليه.",
+    "forbidden": "الوصول إلى سجلات المرضى مقيد."
+  },
+  "offers": {
+    "loading": "جارٍ تحميل العرض...",
+    "title": "عرض قائمة الانتظار",
+    "doctorLabel": "الطبيب",
+    "specialization": "التخصص",
+    "offeredSlot": "الموعد المعروض",
+    "currentAppointment": "موعدك الحالي",
+    "compareLabel": "سيتم استبدال موعدك الحالي بهذا الموعد",
+    "from": "من",
+    "to": "إلى",
+    "accept": "قبول العرض",
+    "decline": "رفض",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "retry": "إعادة المحاولة",
+    "expired": "انتهت صلاحية هذا العرض.",
+    "accepted": "تم قبول العرض",
+    "declined": "تم رفض العرض",
+    "acceptedDescription": "تم جدولة موعدك. يمكنك الاطلاع عليه في مواعيدي.",
+    "declinedDescription": "لقد رفضت هذا العرض. يمكنك العودة إلى قائمة الانتظار للحصول على عروض أخرى.",
+    "notFound": "العرض غير موجود.",
+    "forbidden": "ليس لديك صلاحية للوصول إلى هذا العرض.",
+    "genericError": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+    "unavailable": "هذا الموعد لم يعد متاحاً.",
+    "countdownLabel": "ينتهي العرض خلال",
+    "goToAppointments": "عرض مواعيدي",
+    "goToWaitlist": "العودة إلى قائمة الانتظار",
+    "goHome": "الذهاب إلى الرئيسية",
+    "acceptDialogTitle": "قبول العرض",
+    "acceptDialogDescription": "هل أنت متأكد أنك تريد قبول هذا العرض؟ سيتم استبدال موعدك الحالي بالموعد المعروض.",
+    "declineDialogTitle": "رفض العرض",
+    "declineDialogDescription": "هل أنت متأكد أنك تريد رفض هذا العرض؟ سيتم إتاحة الموعد لمريض آخر في قائمة الانتظار.",
+    "acceptSuccess": "تم قبول العرض بنجاح.",
+    "declineSuccess": "لقد رفضت العرض.",
+    "acceptError": "فشل قبول العرض. يرجى المحاولة مرة أخرى.",
+    "declineError": "فشل رفض العرض. يرجى المحاولة مرة أخرى.",
+    "pending": "جارٍ المعالجة...",
+    "nextStepAppointments": "تم جدولة موعدك. اطلع على مواعيدك للاطلاع على التفاصيل.",
+    "nextStepWaitlist": "يمكنك العودة إلى قائمة الانتظار للانضمام إلى قوائم أطباء آخرين.",
+    "safeNextStep": "عد إلى الصفحة الرئيسية لاستكشاف خيارات أخرى."
+  },
+  "clinicSettings": {
+    "title": "إعدادات العيادة",
+    "subtitle": "إدارة قواعد الحجز وساعات العمل الأسبوعية والإجازات على مستوى العيادة.",
+    "errors": {
+      "required": "هذا الحقل مطلوب.",
+      "loadFailed": "تعذر التحميل. يرجى المحاولة مرة أخرى.",
+      "saveFailed": "فشل الحفظ. يرجى المحاولة مرة أخرى.",
+      "retry": "إعادة المحاولة"
+    },
+    "unsavedChanges": "لديك تغييرات غير محفوظة. هل تريد المغادرة؟",
+    "bookingRules": {
+      "title": "قواعد الحجز",
+      "timezone": "المنطقة الزمنية",
+      "slotDuration": "مدة الفتحة (بالدقائق)",
+      "reminderHours": "تذكير الموعد (بالساعات قبل الموعد)",
+      "offerWindow": "نافذة عرض قائمة الانتظار (بالدقائق)",
+      "arrivalBuffer": "هامش الوصول الأدنى (بالدقائق)",
+      "save": "حفظ قواعد الحجز",
+      "invalidTimezone": "اختر منطقة زمنية صحيحة.",
+      "invalidSlotDuration": "يجب أن تكون مدة الفتحة عدداً صحيحاً.",
+      "slotDurationRange": "يجب أن تكون مدة الفتحة بين 5 و180 دقيقة.",
+      "slotDurationStep": "يجب أن تكون مدة الفتحة قابلة للقسمة على 5.",
+      "invalidReminderHours": "يجب أن تكون ساعات التذكير عدداً صحيحاً.",
+      "reminderHoursRange": "يجب أن تكون ساعات التذكير بين 1 و168.",
+      "invalidOfferWindow": "يجب أن تكون نافذة العرض عدداً صحيحاً.",
+      "offerWindowRange": "يجب أن تكون نافذة العرض بين 5 و1440 دقيقة.",
+      "invalidArrivalBuffer": "يجب أن يكون هامش الوصول عدداً صحيحاً.",
+      "arrivalBufferRange": "يجب أن يكون هامش الوصول بين 0 و120 دقيقة.",
+      "conflict": "تم تحديث الإعدادات من جلسة أخرى. حدّث الصفحة للاطلاع على أحدث القيم."
+    },
+    "weeklyHours": {
+      "title": "ساعات العمل الأسبوعية",
+      "save": "حفظ ساعات العمل",
+      "open": "مفتوح",
+      "closed": "مغلق",
+      "startTime": "البداية",
+      "endTime": "النهاية",
+      "invalidTime": "أدخل وقتاً صحيحاً.",
+      "endAfterStart": "يجب أن تكون النهاية بعد البداية.",
+      "mustHaveSevenDays": "يجب أن تتضمن ساعات العمل سبعة أيام.",
+      "duplicateWeekday": "يمكن أن يظهر كل يوم مرة واحدة فقط.",
+      "days": {
+        "0": "الأحد",
+        "1": "الاثنين",
+        "2": "الثلاثاء",
+        "3": "الأربعاء",
+        "4": "الخميس",
+        "5": "الجمعة",
+        "6": "السبت"
+      }
+    },
+    "holidays": {
+      "title": "إجازات العيادة",
+      "add": "إضافة إجازة",
+      "date": "التاريخ",
+      "name": "اسم الإجازة",
+      "deleteTitle": "حذف الإجازة",
+      "deleteDescription": "ستتم إزالة هذه الإجازة وسيصبح هذا التاريخ قابلاً للحجز مرة أخرى.",
+      "deleteConfirm": "حذف",
+      "deleteCancel": "إلغاء",
+      "deleteTrigger": "حذف الإجازة",
+      "duplicateDate": "توجد إجازة بالفعل في هذا التاريخ.",
+      "dateRequired": "التاريخ مطلوب.",
+      "invalidDate": "أدخل تاريخاً صحيحاً.",
+      "nameRequired": "اسم الإجازة مطلوب.",
+      "nameTooLong": "يجب ألا يتجاوز اسم الإجازة 120 حرفاً."
+    }
+  },
+  "errors": {
+    "forbidden": {
+      "eyebrow": "الوصول مقيد",
+      "title": "ليست لديك صلاحية لعرض هذه الصفحة.",
+      "description": "تم تسجيل دخولك، لكن هذه المنطقة مخصصة لأدوار محددة في العيادة.",
+      "primaryAuthenticated": "الانتقال إلى مساحة العمل",
+      "primaryGuest": "تسجيل الدخول",
+      "secondary": "الرجوع",
+      "support": "إذا كنت تعتقد أن هذا خطأ، تواصل مع مدير العيادة."
+    },
+    "notFound": {
+      "eyebrow": "الصفحة غير موجودة",
+      "title": "لم نتمكن من العثور على هذه الصفحة.",
+      "description": "قد يكون الرابط قديماً أو تم نقله أو تمت كتابته بشكل غير صحيح.",
+      "primaryAuthenticated": "الانتقال إلى مساحة العمل",
+      "primaryGuest": "الانتقال للرئيسية",
+      "secondary": "الرجوع",
+      "support": "تحقق من العنوان أو استخدم التنقل للمتابعة."
+    }
+  },
+  "landing": {
+    "nav": {
+      "home": "الرئيسية",
+      "features": "المميزات",
+      "services": "الخدمات",
+      "howItWorks": "كيف يعمل",
+      "contact": "اتصل بنا",
+      "login": "تسجيل الدخول",
+      "register": "إنشاء حساب"
+    },
+    "hero": {
+      "eyebrow": "رعاية الأسنان الحديثة",
+      "headline": "احجز موعدك في عيادة الأسنان عبر الإنترنت",
+      "subheadline": "تخلّص من المكالمات الهاتفية. اختر موعداً، احصل على تأكيد، وتلقَّ تذكيراً — كل ذلك في دقائق.",
+      "cta": {
+        "book": "احجز موعداً",
+        "queue": "عرض الطابور المباشر"
+      },
+      "trust": {
+        "slots": "مواعيد في نفس اليوم",
+        "cancel": "إلغاء مجاني قبل 24 ساعة",
+        "reminders": "تذكيرات بالبريد الإلكتروني"
+      }
+    },
+    "stats": {
+      "patients": "مريض تمت خدمته",
+      "satisfaction": "معدل الرضا",
+      "doctors": "أطباء متخصصون",
+      "waitTime": "متوسط وقت الانتظار"
+    },
+    "features": {
+      "title": "لماذا تختار عيادتنا",
+      "cards": {
+        "booking": { "title": "الحجز الإلكتروني", "body": "احجز في أي وقت ومن أي جهاز بدون اتصال هاتفي." },
+        "reminders": { "title": "تذكيرات ذكية", "body": "تذكيرات تلقائية بالبريد الإلكتروني قبل موعدك." },
+        "waitlist": { "title": "محرك قائمة الانتظار", "body": "يتم إشعارك تلقائياً عند توفر موعد ملغى يناسب نافذتك الزمنية." },
+        "queue": { "title": "الطابور المباشر", "body": "شاهد موقعك في الطابور في الوقت الفعلي." },
+        "bilingual": { "title": "ثنائي اللغة", "body": "دعم كامل للعربية والإنجليزية مع تخطيط RTL." },
+        "secure": { "title": "آمن وخاص", "body": "مصادقة JWT وكلمات مرور مشفرة والتحكم في الوصول." }
+      }
+    },
+    "howItWorks": {
+      "title": "كيف يعمل",
+      "steps": {
+        "1": { "title": "سجّل", "desc": "أنشئ حساباً مجانياً ببريدك الإلكتروني في أقل من دقيقة." },
+        "2": { "title": "اختر موعداً", "desc": "اختر الطبيب والتاريخ والوقت المناسب لك." },
+        "3": { "title": "احصل على التأكيد", "desc": "ستصلك رسالة تأكيد فورية على بريدك الإلكتروني." },
+        "4": { "title": "احضر في الموعد", "desc": "سنذكّرك قبل 24 ساعة — بدون مفاجآت." }
+      }
+    },
+    "testimonials": {
+      "title": "ماذا يقول مرضانا",
+      "items": {
+        "1": { "name": "سارة م.", "quote": "الحجز الإلكتروني وفّر عليّ الكثير من الوقت. حصلت على موعد في دقيقتين!" },
+        "2": { "name": "أحمد خ.", "quote": "الواجهة العربية كانت مثالية. سهلة الاستخدام جداً." },
+        "3": { "name": "لينا ر.", "quote": "ميزة قائمة الانتظار جلبت لي موعداً مبكراً تلقائياً. رائع." }
+      }
+    },
+    "cta": {
+      "heading": "هل أنت مستعد لحجز موعدك القادم؟",
+      "button": "ابدأ الآن",
+      "login": "هل لديك حساب بالفعل؟ سجّل الدخول"
+    },
+    "footer": {
+      "tagline": "رعاية أسنان عالية الجودة، بكل بساطة.",
+      "quickLinks": "روابط سريعة",
+      "contact": "اتصل بنا",
+      "copyright": "© {{year}} عيادة الأسنان. جميع الحقوق محفوظة."
+    }
+  }
+}
+

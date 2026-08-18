@@ -1,0 +1,1505 @@
+{
+	"common": {
+		"loading": "Loading"
+	},
+	"queue": {
+		"page": {
+			"title": "Doctor Queue",
+			"subtitle": "Track today's appointments and keep the clinic moving"
+		},
+		"status": {
+			"PENDING": "Pending",
+			"CONFIRMED": "Confirmed",
+			"IN_PROGRESS": "In progress",
+			"COMPLETED": "Completed",
+			"NO_SHOW": "No-show",
+			"CANCELED": "Canceled",
+			"connected": "Connected",
+			"reconnecting": "Reconnecting",
+			"disconnected": "Disconnected"
+		},
+		"connection": {
+			"connected": "Connected",
+			"reconnecting": "Reconnecting",
+			"offline": "Offline",
+			"disconnected": "Disconnected"
+		},
+		"summary": {
+			"inSession": "In session",
+			"waiting": "Waiting",
+			"upcoming": "Upcoming",
+			"completed": "Completed",
+			"noShow": "No-show"
+		},
+		"section": {
+			"inSession": "In session",
+			"waiting": "Waiting",
+			"upcoming": "Upcoming",
+			"followUp": "Follow-up",
+			"finished": "Finished"
+		},
+		"sectionEmpty": {
+			"inSession": "No appointments are in session.",
+			"waiting": "No waiting appointments right now.",
+			"upcoming": "No upcoming appointments.",
+			"followUp": "No follow-up appointments need action.",
+			"finished": "No finished appointments yet."
+		},
+		"reconnecting": "Reconnecting...",
+		"profile": {
+			"title": "Doctor profile context",
+			"loading": "Loading your linked doctor profile...",
+			"specializationFallback": "Specialization not listed",
+			"warningTitle": "Could not load doctor profile",
+			"warning": "Queue data is still available, but your profile context could not be loaded."
+		},
+		"filters": {
+			"showFinished": "Show finished",
+			"clear": "Clear filters"
+		},
+		"actions": {
+			"confirm": "Confirm",
+			"start": "Start",
+			"complete": "Complete",
+			"noShow": "No-show",
+			"cancel": "Cancel",
+			"markNoFollowUpNeeded": "Mark no follow-up needed",
+			"refresh": "Refresh",
+			"editNote": "Edit note",
+			"save": "Save"
+		},
+		"badges": {
+			"followUpNeeded": "Follow-up needed",
+			"followUpScheduled": "Follow-up scheduled"
+		},
+		"labels": {
+			"scheduled": "Scheduled {{time}}"
+		},
+		"freshness": {
+			"updated": "Updated {{when}}",
+			"waiting": "Waiting for live updates"
+		},
+		"dialog": {
+			"noShow": {
+				"title": "Mark as no-show?",
+				"description": "This marks the appointment as no-show and cannot be undone from this dialog."
+			}
+		},
+		"note": {
+			"title": "Edit note",
+			"description": "Save an operational note for #{{position}}.",
+			"empty": "No note yet",
+			"maxLength": "Notes must be 1,000 characters or fewer"
+		},
+		"empty": {
+			"title": "No appointments found",
+			"description": "Try another filter or come back later."
+		},
+		"error": {
+			"load": "Could not load the doctor queue"
+		}
+	},
+	"lobby": {
+		"loading": "Loading queue…",
+		"doctorNotFound": "Doctor not found",
+		"invalidLink": "Invalid lobby link",
+		"invalidLinkDescription": "This lobby link is missing a kiosk token or the token has expired.",
+		"unexpectedError": "Unable to load the lobby display",
+		"connectionLost": "Connection lost. Reconnecting…",
+		"nowInProgress": "Now in Progress",
+		"noPatientInSession": "No patient in session",
+		"nextUp": "Next Up",
+		"noUpcoming": "No upcoming appointments",
+		"waiting": "Waiting",
+		"noWaiting": "No patients waiting",
+		"morePatients": "+ {{count}} more",
+		"patient": "Patient #{{number}}",
+		"scheduled": "Scheduled {{time}}",
+		"started": "Started {{time}}",
+		"lastUpdated": "Last updated: {{time}}",
+		"poweredBy": "Powered by Dental Clinic",
+		"selectLanguage": "Select language",
+		"inProgress": "IN PROGRESS"
+	},
+	"doctorToday": {
+		"page": {
+			"title": "Doctor Today",
+			"subtitle": "Review today's schedule and clinic workload"
+		},
+		"header": {
+			"date": "Selected date",
+			"refresh": "Refresh"
+		},
+		"actions": {
+			"retry": "Retry",
+			"save": "Save",
+			"saving": "Saving...",
+			"confirm": "Confirm",
+			"start": "Start",
+			"complete": "Complete",
+			"noShow": "No-show"
+		},
+		"kpi": {
+			"todayTotal": "Today's total",
+			"completed": "Completed",
+			"remaining": "Remaining",
+			"inSession": "In session",
+			"noShows": "No-shows",
+			"selectedDate": "Selected date"
+		},
+		"charts": {
+			"week": {
+				"title": "Week at a glance",
+				"description": "Pick a day to switch the schedule to that date."
+			},
+			"status": {
+				"title": "Monthly status distribution",
+				"description": "Use the status chips to filter the schedule."
+			},
+			"hourly": {
+				"title": "Monthly hourly load",
+				"description": "See when the clinic is busiest during the month."
+			}
+		},
+		"tabs": {
+			"today": "Today",
+			"thisWeek": "This Week"
+		},
+		"profile": {
+			"title": "Doctor profile context",
+			"loading": "Loading your linked doctor profile...",
+			"specializationFallback": "Specialization not listed",
+			"warningTitle": "Could not load doctor profile",
+			"warning": "Schedule data is still available, but your profile context could not be loaded."
+		},
+		"filters": {
+			"status": "Status filter",
+			"all": "All statuses",
+			"sort": "Sort by"
+		},
+		"table": {
+			"date": "Date",
+			"time": "Time",
+			"patient": "Patient",
+			"patientSequence": "Patient #{{sequence}}",
+			"status": "Status",
+			"duration": "Duration",
+			"notes": "Notes",
+			"actions": "Actions",
+			"gap": "Gap of {{minutes}} minutes",
+			"inSession": "In session",
+			"empty": {
+				"title": "No appointments found",
+				"description": "Try another date or clear filters."
+			},
+			"sort": {
+				"startsAt": "Start time",
+				"status": "Status",
+				"date": "Date"
+			}
+		},
+		"note": {
+			"label": "Notes for patient #{{sequence}}",
+			"maxLength": "Notes must be 1,000 characters or fewer",
+			"saveErrorTitle": "Could not save notes",
+			"saveError": "Please try again. Your draft was preserved."
+		},
+		"error": {
+			"stats": "Could not load KPI cards",
+			"trends": "Could not load weekly trends",
+			"statusDistribution": "Could not load status distribution",
+			"hourlyLoad": "Could not load hourly load",
+			"schedule": "Could not load the schedule"
+		}
+	},
+	"nav": {
+		"bookAppointment": "Book Appointment",
+		"myAppointments": "My Appointments",
+		"waitlist": "Waitlist",
+		"profile": "Profile",
+		"myQueue": "My Queue",
+		"lobbyAccess": "Lobby Access",
+		"todaysSchedule": "Today's Schedule",
+		"queue": "Queue",
+		"appointments": "Appointments",
+		"patients": "Patients",
+		"walkInBooking": "Walk-In Booking",
+		"dashboard": "Dashboard",
+		"clinicSettings": "Clinic Settings",
+		"doctors": "Doctors",
+		"users": "Users",
+		"auditLog": "Audit Log",
+		"label": "Main navigation"
+	},
+	"lobbyAccess": {
+		"title": "Lobby access",
+		"subtitle": "Generate a secure public lobby link for a receptionist or admin-managed waiting-room display.",
+		"generateTitle": "Generate lobby link",
+		"generateDescription": "Choose a doctor, then issue a kiosk token and a ready-to-use public lobby URL.",
+		"doctorLabel": "Doctor",
+		"selectDoctorPlaceholder": "Select a doctor",
+		"generate": "Generate link",
+		"generateSuccess": "Lobby link generated",
+		"generateError": "Could not generate the lobby link",
+		"publicUrlLabel": "Lobby URL",
+		"copy": "Copy link",
+		"open": "Open display",
+		"copySuccess": "Lobby link copied",
+		"copyError": "Could not copy the lobby link",
+		"selectedDoctorLabel": "Selected doctor",
+		"expiresAtLabel": "Expires at",
+		"noLinkYet": "Generate a link to show the public lobby URL here.",
+		"noDoctorSelected": "No doctor selected",
+		"noExpiryYet": "Not generated yet",
+		"loadDoctorsErrorTitle": "Could not load doctors",
+		"loadDoctorsError": "Try again after the doctor directory finishes loading.",
+		"qrTitle": "QR code",
+		"qrDescription": "Scan to open the exact lobby URL that was issued by the backend.",
+		"qrAlt": "Lobby display QR code",
+		"qrEmpty": "Generate a lobby link first to show a QR code.",
+		"qrHint": "Use this QR code near reception or on internal instructions for quick access.",
+		"guidanceTitle": "How to use it",
+		"guidanceDescription": "This page is for receptionist and admin staff who manage the waiting-room display.",
+		"guidanceMonitor": "Open the generated lobby URL on the clinic TV or monitor and leave that tab active during clinic hours.",
+		"guidanceQr": "Share the QR code on-site only if you want patients to follow the same public queue view from their phones.",
+		"guidancePrivacy": "The lobby display only shows anonymous queue numbers and schedule times, never patient names.",
+		"unavailable": "Unavailable"
+	},
+	"auditLog": {
+		"page": {
+			"title": "Audit Log",
+			"subtitle": "Review recent privileged activity"
+		},
+		"actions": {
+			"refresh": "Refresh",
+			"reset": "Reset",
+			"retry": "Retry",
+			"previous": "Previous",
+			"next": "Next",
+			"viewDetails": "View details",
+			"appointment.cancel": "Cancel appointment",
+			"APPOINTMENT_CREATED": "Appointment created",
+			"APPOINTMENT_RESCHEDULED": "Appointment rescheduled",
+			"APPOINTMENT_STATUS_UPDATED": "Appointment status updated",
+			"APPOINTMENT_CANCELED": "Appointment canceled",
+			"USER_CREATED": "User created",
+			"USER_UPDATED": "User updated",
+			"USER_DISABLED": "User disabled",
+			"USER_PASSWORD_CHANGED": "Password changed",
+			"DOCTOR_CREATED": "Doctor created",
+			"DOCTOR_UPDATED": "Doctor updated",
+			"SCHEDULE_OVERRIDE_CREATED": "Schedule override created",
+			"SCHEDULE_OVERRIDE_DELETED": "Schedule override deleted",
+			"CLINIC_CONFIG_UPDATED": "Clinic settings updated",
+			"WORKING_HOURS_UPDATED": "Working hours updated",
+			"HOLIDAY_CREATED": "Holiday created",
+			"HOLIDAY_DELETED": "Holiday deleted",
+			"WAITLIST_ENTRY_UPDATED": "Waitlist entry updated",
+			"WAITLIST_ENTRY_DELETED": "Waitlist entry deleted",
+			"WAITLIST_OFFER_CREATED": "Waitlist offer created",
+			"WAITLIST_OFFER_EXPIRED": "Waitlist offer expired"
+		},
+		"filters": {
+			"from": "From",
+			"to": "To",
+			"actorId": "Actor ID",
+			"actorIdPlaceholder": "Filter by actor ID",
+			"actorName": "Actor name",
+			"actorNamePlaceholder": "Filter by name",
+			"action": "Action",
+			"actionPlaceholder": "Comma-separated action keys",
+			"targetType": "Target type",
+			"targetTypePlaceholder": "Comma-separated target types",
+			"targetId": "Target ID",
+			"targetIdPlaceholder": "Filter by target ID"
+		},
+		"table": {
+			"time": "Time",
+			"actor": "Actor",
+			"action": "Action",
+			"targetType": "Target",
+			"summary": "Summary",
+			"details": "Details"
+		},
+		"pagination": {
+			"pageSize": "Rows",
+			"pageInfo": "Page {{page}} of {{totalPages}}"
+		},
+		"status": {
+			"refreshing": "Refreshing the current results..."
+		},
+		"details": {
+			"title": "Audit details",
+			"actor": "Actor",
+			"action": "Action",
+			"target": "Target",
+			"timestamp": "Timestamp",
+			"payload": "Payload"
+		},
+		"empty": {
+			"title": "No audit entries found",
+			"description": "Try clearing the filters or refreshing the log."
+		},
+		"error": {
+			"title": "Could not load audit log",
+			"description": "The latest request failed, but the page stays safe and read-only."
+		},
+		"payload": {
+			"empty": "No payload available",
+			"showMore": "Show more",
+			"showLess": "Show less"
+		},
+		"unknownActor": "Unknown actor",
+		"noTargetId": "No target ID"
+	},
+	"doctorsAdmin": {
+		"page": {
+			"title": "Doctors",
+			"subtitle": "Manage doctor profiles and schedule overrides"
+		},
+		"tabs":{
+			"overrides":"Override",
+			"profile":"Profile"
+		},
+		"actions": {
+			"createDoctor": "Create Doctor",
+			"create": "Create",
+			"saveChanges": "Save changes",
+			"cancel": "Cancel",
+			"refresh": "Refresh",
+			"reset": "Reset",
+			"retry": "Retry",
+			"previous": "Previous",
+			"next": "Next",
+			"viewProfile": "View profile",
+			"selected": "Selected",
+			"back": "Back",
+			"addOverride": "Add override",
+			"delete": "Delete",
+			"deleting": "Deleting..."
+		},
+		"status": {
+			"active": "Active",
+			"inactive": "Inactive"
+		},
+		"directory": {
+			"title": "Doctor Directory",
+			"search": "Search",
+			"searchPlaceholder": "Search doctors",
+			"specialization": "Specialization",
+			"specializationPlaceholder": "Filter by specialization",
+			"status": "Status",
+			"statusAll": "All",
+			"statusActive": "Active",
+			"statusInactive": "Inactive",
+			"errorTitle": "Could not load doctors",
+			"errorDescription": "Try refreshing the directory.",
+			"emptyTitle": "No doctors found",
+			"emptyDescription": "Adjust the filters or clear them to see the full directory.",
+			"page": "Page {{page}} of {{totalPages}}",
+			"notSet": "Not set",
+			"derivedAvailability": "Derived from clinic hours"
+		},
+		"detail": {
+			"loading": "Loading doctor details...",
+			"noSelectionTitle": "No doctor selected",
+			"noSelectionDescription": "Select a doctor from the directory to view details."
+		},
+		"profile": {
+			"createTitle": "Create Doctor",
+			"editTitle": "Edit Profile",
+			"firstName": "First name",
+			"lastName": "Last name",
+			"email": "Email",
+			"phone": "Phone",
+			"specialization": "Specialization",
+			"bio": "Bio",
+			"active": "Active"
+		},
+		"createDialog": {
+			"title": "Create doctor profile",
+			"description": "Add a new doctor account and profile."
+		},
+		"overrideForm": {
+			"title": "Add Override",
+			"date": "Date",
+			"unavailableAllDay": "Unavailable all day",
+			"startTime": "Start time",
+			"endTime": "End time",
+			"reason": "Reason"
+		},
+		"overrideList": {
+			"title": "Overrides",
+			"errorTitle": "Could not load overrides",
+			"errorDescription": "Try again after refreshing the doctor details.",
+			"emptyTitle": "No overrides yet",
+			"emptyDescription": "Add a schedule override for this doctor."
+		},
+		"deleteDialog": {
+			"title": "Delete override?",
+			"description": "This will remove the selected schedule override."
+		},
+		"errors": {
+			"firstNameRequired": "First name is required",
+			"lastNameRequired": "Last name is required",
+			"invalidEmail": "Please enter a valid email address",
+			"invalidPhone": "Please enter a valid phone number",
+			"nameTooLong": "Name is too long",
+			"specializationTooLong": "Specialization is too long",
+			"bioTooLong": "Bio is too long",
+			"dateRequired": "Date is required",
+			"invalidDate": "Please enter a valid date",
+			"invalidTime": "Please enter a valid time",
+			"endAfterStart": "End time must be after start time",
+			"pastDate": "Past dates are not allowed",
+			"reasonTooLong": "Reason is too long",
+			"createFailed": "Could not create doctor",
+			"updateFailed": "Could not update doctor",
+			"createOverrideFailed": "Could not create override",
+			"deleteOverrideFailed": "Could not delete override"
+		},
+		"success": {
+			"updateProfile": "Profile updated successfully",
+			"createOverride": "Schedule override added successfully",
+			"deleteOverride": "Schedule override deleted successfully"
+		}
+	},
+	"usersAdmin": {
+		"page": { "title": "Users", "subtitle": "Manage clinic accounts, roles, language preferences, and account status" },
+		"actions": { "createUser": "Create user", "create": "Create", "save": "Save changes", "saving": "Saving...", "edit": "Edit", "disable": "Disable", "disableSelfBlocked": "Disable unavailable", "disabling": "Disabling...", "enable": "Enable", "enabling": "Enabling...", "cancel": "Cancel", "reset": "Reset", "retry": "Retry", "previous": "Previous", "next": "Next", "actions": "Actions" },
+		"filters": { "search": "Search", "searchPlaceholder": "Search by name, email, or phone", "role": "Role", "status": "Status", "language": "Language", "sortBy": "Sort by", "sortDir": "Sort direction", "defaultSort": "Default order", "all": "All" },
+		"columns": { "name": "Name", "email": "Email", "phone": "Phone", "role": "Role", "status": "Status", "language": "Language", "createdAt": "Created", "actions": "Actions" },
+		"roles": { "PATIENT": "Patient", "DOCTOR": "Doctor", "RECEPTIONIST": "Receptionist", "ADMIN": "Admin" },
+		"status": { "active": "Active", "disabled": "Disabled" },
+		"language": { "en": "English", "ar": "Arabic" },
+		"sort": { "name": "Name", "email": "Email", "role": "Role", "createdAt": "Created date", "asc": "Ascending", "desc": "Descending" },
+		"pagination": { "page": "Page {{page}} of {{totalPages}}" },
+		"table": { "errorTitle": "Could not load users", "errorDescription": "Try refreshing the page.", "emptyTitle": "No users yet", "emptyDescription": "Create the first clinic account to get started.", "noResultsTitle": "No users match the filters", "noResultsDescription": "Adjust the search or clear the filters." },
+		"dialog": { "createTitle": "Create user", "createDescription": "Add a new clinic account.", "editTitle": "Edit user", "editDescription": "Update the selected account." },
+		"disableDialog": { "title": "Disable user?", "description": "Disable {{name}} ({{email}})? They will no longer be able to sign in.", "fallback": "Disable the selected user?" },
+		"form": { "firstName": "First name", "lastName": "Last name", "email": "Email", "phone": "Phone", "role": "Role", "languagePreference": "Language", "password": "Temporary password", "doctorRoleNoteTitle": "Doctor role note", "doctorRoleNote": "Creating a doctor account may also require a separate doctor profile setup.", "selfRoleLocked": "You cannot reduce your own role from this screen.", "hintTitle": "Heads up" },
+		"errors": { "submitTitle": "Could not save user", "loadTitle": "Could not load users", "loadDescription": "Try again in a moment." },
+		"success": { "create": "User created successfully", "update": "User updated successfully", "disable": "User disabled successfully", "enable": "User enabled successfully" }
+	},
+	"adminDashboard": {
+		"title": "Admin Dashboard",
+		"subtitle": "Operational overview for clinic administrators",
+		"filters": {
+			"title": "Filters",
+			"from": "From",
+			"to": "To",
+			"doctorId": "Doctor",
+			"doctorAll": "All doctors",
+			"doctorSearchPlaceholder": "Search doctors",
+			"doctorLoading": "Loading doctors...",
+			"doctorEmpty": "No doctors found",
+			"status": "Status",
+			"patientName": "Patient name",
+			"bucket": "Grouping",
+			"apply": "Apply filters",
+			"reset": "Reset"
+		},
+		"kpi": {
+			"totalAppointments": "Total appointments",
+			"completed": "Completed appointments",
+			"cancellationRate": "Cancellation rate",
+			"noShowRate": "No-show rate",
+			"activePatients": "Active patients",
+			"waitlistSize": "Waitlist size",
+			"currentPeriod": "Current period"
+		},
+		"charts": {
+			"trends": "Appointment trends",
+			"statusDistribution": "Status distribution",
+			"doctorUtilization": "Doctor utilization",
+			"busiestDays": "Busiest weekdays",
+			"cancellationTrends": "Cancellation trends",
+			"canceledByPatient": "Canceled by patient",
+			"canceledByStaff": "Canceled by staff",
+			"waitlistSummary": "Waitlist summary"
+		},
+		"waitlistSummary": {
+			"totalActive": "Total active",
+			"empty": "No active waitlist entries right now",
+			"doctorCount": "Doctors with active waitlist"
+		},
+		"tabs": {
+			"appointments": "Appointments",
+			"followUps": "Follow-ups",
+			"waitlist": "Waitlist"
+		},
+		"bucket": {
+			"auto": "Auto",
+			"day": "Day",
+			"week": "Week",
+			"month": "Month"
+		},
+		"status": {
+			"PENDING": "Pending",
+			"CONFIRMED": "Confirmed",
+			"IN_PROGRESS": "In progress",
+			"COMPLETED": "Completed",
+			"CANCELED": "Canceled",
+			"NO_SHOW": "No-show"
+		},
+		"export": {
+			"export": "Export CSV",
+			"exporting": "Exporting..."
+		},
+		"table": {
+			"empty": "No records found",
+			"page": "Table page",
+			"previous": "Previous",
+			"next": "Next",
+			"appointments": {
+				"from": "Appointment date",
+				"to": "Appointment time",
+				"doctor": "Doctor",
+				"patient": "Patient",
+				"status": "Status",
+				"bookedAt": "Booked at",
+				"action": "Action",
+				"cancel": "Cancel appointment",
+				"canceling": "Canceling...",
+				"noActions": "No actions"
+			},
+			"followUps": {
+				"patient": "Patient",
+				"lastAppointment": "Last appointment",
+				"daysSince": "Days since",
+				"upcoming": "Upcoming appointment",
+				"action": "Book",
+				"threshold": "Days since last visit",
+				"updateThreshold": "apply"
+			},
+			"waitlist": {
+				"position": "Position",
+				"patient": "Patient",
+				"doctor": "Doctor",
+				"availabilityWindow": "Availability window",
+				"joined": "Joined",
+				"action": "Remove"
+			}
+		},
+		"scheduling": {
+			"action": "Schedule follow-up",
+			"title": "Schedule follow-up",
+			"description": "Choose a future slot for this completed appointment and add the scheduling details.",
+			"source": {
+				"patient": "Patient",
+				"doctor": "Doctor",
+				"time": "Source appointment time"
+			},
+			"dateLabel": "Follow-up date",
+			"reasonLabel": "Reason",
+			"notesLabel": "Notes (optional)",
+			"cancel": "Cancel",
+			"submit": "Schedule follow-up",
+			"pending": "Scheduling...",
+			"success": "Follow-up scheduled successfully",
+			"errorTitle": "Could not schedule follow-up",
+			"loadingSlots": "Loading available slots...",
+			"emptySlots": "No future slots are available for this date.",
+			"retry": "Retry",
+			"slotGroups": {
+				"morning": "Morning",
+				"afternoon": "Afternoon",
+				"evening": "Evening"
+			},
+			"errors": {
+				"slotRequired": "Select a future slot",
+				"reasonRequired": "Enter a reason",
+				"reasonTooLong": "Reason must be 500 characters or fewer",
+				"notesTooLong": "Notes must be 2,000 characters or fewer",
+				"slotsUnavailableTitle": "Slots unavailable",
+				"slotsUnavailable": "We could not load available slots right now.",
+				"invalidPayload": "The follow-up details were rejected.",
+				"permissionDenied": "You do not have permission to schedule this follow-up.",
+				"notFound": "The source appointment or clinic data could not be found.",
+				"conflict": "That slot is no longer available. Please select another slot.",
+				"network": "A network error occurred. Please try again."
+			}
+		},
+		"errors": {
+			"chart": "This chart failed to load",
+			"table": "This table failed to load",
+			"retry": "Retry"
+		}
+	},
+	"followUps": {
+		"scheduling": {
+			"action": "Schedule follow-up",
+			"title": "Schedule follow-up",
+			"description": "Choose a future slot for this completed appointment and add the scheduling details.",
+			"source": {
+				"patient": "Patient",
+				"doctor": "Doctor",
+				"time": "Source appointment time"
+			},
+			"dateLabel": "Follow-up date",
+			"reasonLabel": "Reason",
+			"notesLabel": "Notes (optional)",
+			"cancel": "Cancel",
+			"submit": "Schedule follow-up",
+			"pending": "Scheduling...",
+			"success": "Follow-up scheduled successfully",
+			"errorTitle": "Could not schedule follow-up",
+			"loadingSlots": "Loading available slots...",
+			"emptySlots": "No future slots are available for this date.",
+			"retry": "Retry",
+			"slotGroups": {
+				"morning": "Morning",
+				"afternoon": "Afternoon",
+				"evening": "Evening"
+			},
+			"errors": {
+				"slotRequired": "Select a future slot",
+				"reasonRequired": "Enter a reason",
+				"reasonTooLong": "Reason must be 500 characters or fewer",
+				"notesTooLong": "Notes must be 2,000 characters or fewer",
+				"slotsUnavailableTitle": "Slots unavailable",
+				"slotsUnavailable": "We could not load available slots right now.",
+				"invalidPayload": "The follow-up details were rejected.",
+				"permissionDenied": "You do not have permission to schedule this follow-up.",
+				"notFound": "The source appointment or clinic data could not be found.",
+				"conflict": "That slot is no longer available. Please select another slot.",
+				"network": "A network error occurred. Please try again."
+			}
+		}
+	},
+	"shell": {
+		"userMenu": {
+			"viewProfile": "View Profile",
+			"role": "Role",
+			"signOut": "Sign Out"
+		},
+		"header": {
+			"openMenu": "Open menu",
+			"closeMenu": "Close menu"
+		},
+		"error": {
+			"title": "Something went wrong",
+			"description": "An unexpected error occurred. Please try again.",
+			"retry": "Retry",
+			"goHome": "Go to Home"
+		},
+		"loading": {
+			"label": "Loading content"
+		},
+		"skipToContent": "Skip to main content"
+	},
+	"accessDenied": {
+		"title": "Access Denied",
+		"description": "You do not have permission to view this page.",
+		"homeLink": "Go to home"
+	},
+	"auth": {
+		"signIn": "Sign In",
+		"email": "Email",
+		"password": "Password",
+		"emailPlaceholder": "Enter your email",
+		"passwordPlaceholder": "Enter your password",
+		"forgotPassword-login": "Forgot password?",
+		"noAccount": "Register",
+		"showPassword": "Show password",
+		"hidePassword": "Hide password",
+		"register": {
+			"title": "Create Your Account",
+			"subtitle": "Book appointments in minutes",
+			"firstName": "First name",
+			"lastName": "Last name",
+			"email": "Email address",
+			"password": "Password",
+			"confirmPassword": "Confirm password",
+			"phoneNumberOptional": "Phone number (optional)",
+			"dateOfBirthOptional": "Date of birth (optional)",
+			"consentText": "I agree to the Terms of Service and Privacy Policy",
+			"submit": "Create Account",
+			"hasAccount": "Already have an account?",
+			"signIn": "Sign in",
+			"emailConflictAction": "Sign in instead",
+			"showPassword": "Show password",
+			"hidePassword": "Hide password",
+			"showConfirmPassword": "Show confirm password",
+			"hideConfirmPassword": "Hide confirm password"
+		},
+		"resetPassword": {
+			"title": "Set New Password",
+			"subtitle": "Enter and confirm your new password below.",
+			"newPassword": "New password",
+			"confirmPassword": "Confirm new password",
+			"newPasswordPlaceholder": "Enter new password",
+			"confirmPasswordPlaceholder": "Confirm new password",
+			"submit": "Reset Password",
+			"showNewPassword": "Show new password",
+			"hideNewPassword": "Hide new password",
+			"showConfirmPassword": "Show confirm password",
+			"hideConfirmPassword": "Hide confirm password",
+			"invalidLinkTitle": "Link Invalid or Expired",
+			"invalidLinkMessage": "This password reset link is invalid or has expired.",
+			"requestNewLink": "Request a new link",
+			"successTitle": "Password Updated",
+			"successMessage": "Your password has been updated. You will be signed in shortly.",
+			"signInNow": "Sign in now",
+			"redirectingIn": "Redirecting to sign in in {{seconds}}s\u2026"
+		},
+		"forgotPassword": {
+			"title": "Forgot Password?",
+			"subtitle": "Enter your email and we'll send a reset link if an account exists.",
+			"email": "Email address",
+			"submit": "Send Reset Link",
+			"backToSignIn": "← Back to sign in",
+			"successTitle": "Check Your Email",
+			"successMessage": "If an account exists for {{email}}, a reset link has been sent. Check your spam folder too.",
+			"sendAgain": "Send Again",
+			"sendAgainCooldown": "Send Again ({{seconds}}s)"
+		},
+		"errors": {
+			"invalidEmail": "Please enter a valid email address",
+			"passwordRequired": "Password is required",
+			"invalidCredentials": "Invalid email or password",
+			"accountDisabled": "Your account has been disabled. Contact support.",
+			"rateLimited": "Too many attempts. Please try again in 15 minutes.",
+			"networkError": "Something went wrong. Please try again.",
+			"emailRequired": "Please enter your email address",
+			"firstNameRequired": "First name is required",
+			"lastNameRequired": "Last name is required",
+				"passwordTooShort": "Password must be at least 8 characters",
+				"passwordUppercaseRequired": "Password must include at least one uppercase letter",
+				"passwordDigitRequired": "Password must include at least one digit",
+				"firstNameTooLong": "First name must be 50 characters or fewer",
+				"lastNameTooLong": "Last name must be 50 characters or fewer",
+				"passwordMismatch": "Passwords do not match",
+			"invalidPhone": "Please enter a valid phone number",
+			"invalidDOB": "Date of birth must be valid and you must be at least 16 years old",
+			"consentRequired": "You must agree to the Terms of Service and Privacy Policy",
+			"emailConflict": "An account with this email already exists.",
+			"resetFailed": "Something went wrong. Please try again."
+		}
+	},
+	"booking": {
+		"title": "Book an Appointment",
+		"sections": {
+			"doctor": "Select a Doctor",
+			"dateTime": "Choose Date & Time",
+			"summary": "Review & Confirm"
+		},
+		"clinicContext": {
+			"title": "Clinic timing context",
+			"slotDuration": "Appointment duration: {{minutes}} minutes",
+			"timezone": "Clinic timezone: {{timezone}}"
+		},
+		"steps": {
+			"doctor": "Doctor",
+			"date": "Date",
+			"time": "Time",
+			"confirm": "Confirm"
+		},
+		"slotGroups": {
+			"morning": "Morning",
+			"afternoon": "Afternoon",
+			"evening": "Evening"
+		},
+		"summary": {
+			"title": "Appointment Summary",
+			"doctor": "Doctor",
+			"date": "Date",
+			"time": "Time Slot",
+			"timezoneNote": "All times shown in clinic timezone (Asia/Riyadh).",
+			"confirmButton": "Confirm Booking",
+			"cancellationNote": "You can cancel or reschedule up to 24 hours before your appointment."
+		},
+		"confirmation": {
+			"title": "Confirm Your Appointment",
+			"subtitle": "Please review the details before confirming.",
+			"cancel": "Cancel",
+			"submit": "Book Appointment"
+		},
+		"success": "Appointment booked successfully!",
+		"errors": {
+			"slotTaken": "This slot is no longer available. Please select a different time.",
+			"validationFailed": "Invalid booking request. Please check your selection.",
+			"generic": "Something went wrong. Please try again.",
+			"noDoctors": "No doctors available at this time.",
+			"noSpecialization": "Specialization not listed",
+			"noBio": "Bio not available",
+			"noSlots": "No available slots for this date.",
+			"waitlistLink": "Join waitlist for {{doctorName}}",
+			"doctorsFailed": "Could not load doctors. Please try again.",
+			"slotsFailed": "Could not load available slots. Please try again.",
+			"retry": "Retry"
+		},
+		"slotStates": {
+			"available": "Available",
+			"reserved": "Reserved",
+			"joinWaitlist": "Join waitlist"
+		},
+		"doctorCard": {
+			"specializationFallback": "Specialization not listed",
+			"bioFallback": "Bio not available"
+		}
+	},
+	"walkIn": {
+		"title": "Walk-in Booking",
+		"subtitle": "Search for an existing patient, choose a doctor and slot, then confirm the staff booking.",
+		"steps": {
+			"label": "Walk-in booking progress",
+			"patient": "Patient",
+			"doctor": "Doctor",
+			"slot": "Slot",
+			"confirm": "Confirm"
+		},
+		"doctorSection": {
+			"title": "Select a doctor",
+			"subtitle": "Only active doctors can be booked from this page."
+		},
+		"slotSection": {
+			"title": "Choose date and time",
+			"subtitle": "Pick a clinic day and one of the available slots."
+		},
+		"patientLookup": {
+			"title": "Find patient",
+			"subtitle": "Search by name, phone number, or email address.",
+			"searchPlaceholder": "Search patients",
+			"searchAriaLabel": "Search existing patients",
+			"guidance": "Enter at least 2 characters to search existing patients.",
+			"minChars": "Keep typing to search.",
+			"loadingResults": "Loading patient search results",
+			"loadingSelected": "Loading selected patient",
+			"resultsLabel": "Patient search results",
+			"resultCount": "{{count}} patients found",
+			"selectedPatient": "Selected patient",
+			"active": "Active",
+			"inactive": "Inactive",
+			"inactiveHint": "This patient is inactive and cannot be booked.",
+			"changePatient": "Change patient",
+			"noPhone": "Phone not provided",
+			"noEmail": "Email not provided",
+			"noDob": "Date of birth not provided",
+			"dob": "DOB: {{value}}",
+			"noContact": "No contact details available",
+			"noResults": "No existing patients match this search.",
+			"newPatientUnavailable": "New-patient intake is not available from this page.",
+			"errorTitle": "Patient search unavailable",
+			"permissionRequired": "You do not have permission to search for patients.",
+			"loadFailed": "Could not load patient results. Please try again.",
+			"warningTitle": "Patient warning"
+		},
+		"summary": {
+			"title": "Booking summary",
+			"patient": "Patient",
+			"doctor": "Doctor",
+			"date": "Date",
+			"time": "Time",
+			"note": "Staff note",
+			"notePlaceholder": "Optional note for the clinic team",
+			"timezoneNote": "All times are shown in the clinic timezone ({{timezone}}).",
+			"selectRequirements": "Select a patient, doctor, and available slot to continue.",
+			"confirmButton": "Create appointment",
+			"disclaimer": "You are booking on behalf of the selected patient.",
+			"missingPatient": "Select a patient",
+			"missingDoctor": "Select a doctor",
+			"missingDate": "Select a date",
+			"missingTime": "Select a slot"
+		},
+		"confirmation": {
+			"title": "Confirm walk-in booking",
+			"subtitle": "Review the booking details before submitting.",
+			"disclaimer": "This appointment is created by staff on behalf of the patient.",
+			"cancel": "Cancel",
+			"confirm": "Confirm booking"
+		},
+		"success": "Walk-in appointment created successfully.",
+		"warnings": {
+			"title": "Preselection warning",
+			"invalidDate": "The provided date was invalid or in the past. Today's clinic date was used instead.",
+			"inactivePatient": "The selected patient is inactive and cannot be booked.",
+			"patientPermissionRequired": "You do not have permission to load this patient.",
+			"patientNotFound": "The selected patient could not be found."
+		},
+		"errors": {
+			"patientRequired": "Please select a patient.",
+			"doctorRequired": "Please select a doctor.",
+			"slotRequired": "Please select an available slot.",
+			"noteTooLong": "Staff notes must be 500 characters or fewer.",
+			"slotTaken": "This slot was just booked by someone else. Please choose another time.",
+			"validationFailed": "The booking could not be created. Please review the details and try again.",
+			"generic": "Something went wrong. Please try again."
+		}
+	},
+	"appointments": {
+		"title": "My Appointments",
+		"tabs": {
+			"label": "Appointment views",
+			"queue": "Queue",
+			"waitlist": "Waitlist",
+			"upcoming": "Upcoming",
+			"past": "Past",
+			"canceled": "Canceled"
+		},
+		"filters": {
+			"doctor": "Doctor",
+			"statuses": "Status",
+			"allDoctors": "All doctors",
+			"clear": "Clear filters",
+			"sortBy": "Sort by",
+			"sortDir": "Sort direction",
+			"startsAt": "Start time",
+			"createdAt": "Booking date",
+			"asc": "Ascending",
+			"desc": "Descending"
+		},
+		"status": {
+			"pending": "Pending",
+			"confirmed": "Confirmed",
+			"inProgress": "In progress",
+			"completed": "Completed",
+			"canceled": "Canceled",
+			"noShow": "No show"
+		},
+		"loading": {
+			"previous": "Previous appointments stay visible while filters update."
+		},
+		"errors": {
+			"title": "Could not load appointments",
+			"loadFailed": "Try again to load your appointments.",
+			"retry": "Retry",
+			"notOwned": "This appointment cannot be canceled because it does not belong to you.",
+			"tooLate": "This appointment can only be canceled at least 24 hours before it starts.",
+			"network": "The cancellation could not be completed. Please try again."
+		},
+		"empty": {
+			"upcoming": {
+				"title": "No upcoming appointments",
+				"description": "Your upcoming appointments will appear here."
+			},
+			"past": {
+				"title": "No past appointments",
+				"description": "Completed and missed appointments will appear here."
+			},
+			"canceled": {
+				"title": "No canceled appointments",
+				"description": "Canceled appointments will appear here."
+			},
+			"filtered": {
+				"title": "No matching appointments",
+				"description": "No appointments match the selected filters."
+			}
+		},
+		"actions": {
+			"bookNew": "Book New",
+			"cancel": "Cancel"
+		},
+		"highlight": {
+			"recent": "Recently booked"
+		},
+		"card": {
+			"doctor": "Doctor",
+			"date": "Date",
+			"time": "Time",
+			"bookingDate": "Booked on",
+			"noSpecialization": "Specialization not listed"
+		},
+		"cancellation": {
+			"notice": "This appointment can only be canceled at least 24 hours before it starts."
+		},
+		"dialog": {
+			"title": "Cancel appointment",
+			"description": "This action cannot be undone. Canceling may open the slot for another patient on the waitlist.",
+			"confirm": "Confirm cancellation",
+			"cancel": "Keep appointment",
+			"retry": "Canceling...",
+			"pending": "Cancelling...",
+			"success": "Appointment canceled successfully."
+		},
+		"pagination": {
+			"label": "Appointment pagination",
+			"previous": "Previous",
+			"next": "Next",
+			"page": "Page {{page}} of {{totalPages}}"
+		},
+		"waitlist": {
+			"title": "Waitlist",
+			"subtitle": "Review active waitlist entries and remove them when needed.",
+			"filters": "Filters",
+			"doctorFilter": "Doctor filter",
+			"filterAll": "All doctors",
+			"position": "Position",
+			"positionValue": "#{{position}}",
+			"patient": "Patient",
+			"doctor": "Doctor",
+			"availability": "Availability",
+			"joined": "Joined",
+			"action": "Remove",
+			"anyTime": "Any available time",
+			"empty": "No active waitlist entries.",
+			"loading": "Loading waitlist entries...",
+			"errorTitle": "Could not load the waitlist",
+			"errorDescription": "Please try again.",
+			"refresh": "Refresh",
+			"previous": "Previous",
+			"next": "Next",
+			"pageInfo": "Page {{page}} of {{totalPages}}",
+			"removeConfirmTitle": "Remove waitlist entry",
+			"removeConfirmDescription": "This patient will be removed from the waitlist and will stop receiving offers.",
+			"removeConfirm": "Remove",
+			"removeCancel": "Cancel",
+			"removing": "Removing...",
+			"removeError": "Failed to remove entry. Please try again."
+		}
+	},
+	"profile": {
+		"title": "Profile Settings",
+		"personalInfo": {
+			"sectionTitle": "Personal Information",
+			"firstName": "First name",
+			"lastName": "Last name",
+			"email": "Email address",
+			"phoneNumber": "Phone number",
+			"dateOfBirth": "Date of birth",
+			"preferredLocale": "Preferred language",
+			"localeEn": "English",
+			"localeAr": "Arabic",
+			"save": "Save Changes",
+			"saveSuccess": "Profile updated successfully."
+		},
+		"changePassword": {
+			"sectionTitle": "Change Password",
+			"currentPassword": "Current password",
+			"newPassword": "New password",
+			"confirmPassword": "Confirm new password",
+			"submit": "Update Password",
+			"showCurrentPassword": "Show current password",
+			"hideCurrentPassword": "Hide current password",
+			"showNewPassword": "Show new password",
+			"hideNewPassword": "Hide new password",
+			"showConfirmPassword": "Show confirm password",
+			"hideConfirmPassword": "Hide confirm password",
+			"successToast": "Password changed successfully."
+		},
+		"loading": "Loading profile...",
+		"retry": "Retry",
+		"errors": {
+			"firstNameRequired": "First name is required",
+			"lastNameRequired": "Last name is required",
+			"invalidPhone": "Please enter a valid phone number",
+			"invalidDOB": "Please enter a valid past date",
+			"currentPasswordRequired": "Current password is required",
+			"passwordTooShort": "Password must be at least 8 characters",
+			"passwordTooLong": "Password must be 72 characters or fewer",
+			"passwordMissingUppercase": "Password must include at least one uppercase letter",
+			"passwordMissingDigit": "Password must include at least one digit",
+			"passwordMismatch": "Passwords do not match",
+			"passwordSameAsCurrent": "New password must differ from the current password",
+			"incorrectCurrentPassword": "Incorrect current password",
+			"loadFailed": "Could not load your profile. Please try again.",
+			"saveFailed": "Something went wrong. Please try again.",
+			"passwordChangeFailed": "Something went wrong. Please try again."
+		}
+	},
+	"waitlist": {
+		"title": "My Waitlist",
+		"description": "Waitlist entries help you receive earlier appointment offers when suitable slots become available.",
+		"empty": "You have no active waitlist entries.",
+		"anyTime": "Any available time",
+		"position": "Position #{{position}}",
+		"joined": "Joined {{date}}",
+		"doctorLabel": "Doctor",
+		"availableFrom": "Available from",
+		"availableUntil": "Available until",
+		"joinTitle": "Join a Doctor's Waitlist",
+		"join": "Join Waitlist",
+		"edit": "Edit",
+		"leave": "Leave",
+		"cancel": "Cancel",
+		"confirm": "Confirm",
+		"save": "Save",
+		"retry": "Retry",
+		"loadingEntries": "Loading waitlist entries...",
+		"loadingDoctors": "Loading doctors...",
+		"errorEntries": "Failed to load waitlist entries. Please try again.",
+		"errorDoctors": "Failed to load doctors. Please try again.",
+		"pending": "Processing...",
+		"selectDoctor": "Select a doctor",
+		"joinedSuccess": "Successfully joined the waitlist.",
+		"updatedSuccess": "Availability window updated.",
+		"leftSuccess": "You have left the waitlist.",
+		"alreadyJoined": "You are already on this doctor's waitlist.",
+		"leaveTitle": "Leave Waitlist",
+		"leaveDescription": "Are you sure you want to leave this waitlist? You will stop receiving earlier appointment offers for this doctor.",
+		"offerAvailable": "Earlier appointment offer available",
+		"viewOffer": "View Offer",
+		"errors": {
+			"doctorRequired": "Please select a doctor.",
+			"windowIncomplete": "Please provide both start and end times, or leave both empty.",
+			"windowInvalid": "End time must be later than start time.",
+			"joinFailed": "Failed to join waitlist. Please try again.",
+			"updateFailed": "Failed to update availability. Please try again.",
+			"leaveFailed": "Failed to leave waitlist. Please try again."
+		}
+	},
+	"staffQueue": {
+		"title": "Staff Queue",
+		"subtitle": "Monitor today's appointments, live status changes, and doctor flow.",
+		"live": "Live",
+		"updatedAt": "Updated at {{time}}",
+		"reconnecting": "Reconnecting...",
+		"queueItems": "appointments",
+		"charts": {
+			"byDoctor": "Today by doctor",
+			"statusOverview": "Status overview"
+		},
+		"filters": {
+			"search": "Search patient name or phone",
+			"doctors": "Doctors",
+			"statuses": "Statuses",
+			"clear": "Clear filters",
+			"refresh": "Refresh"
+		},
+		"status": {
+			"PENDING": "Pending",
+			"CONFIRMED": "Confirm",
+			"IN_PROGRESS": "Start",
+			"COMPLETED": "Complete",
+			"CANCELED": "Canceled",
+			"NO_SHOW": "No show"
+		},
+		"kpi": {
+			"total": "Total appointments",
+			"inProgress": "In progress",
+			"waiting": "Waiting",
+			"completed": "Completed",
+			"canceledToday": "Canceled today",
+			"noShow": "No show",
+			"pendingConfirmation": "Pending confirmation",
+			"compactWarning": "Queue remains visible while data refreshes."
+		},
+		"actions": {
+			"confirm": "Confirm",
+			"start": "Start",
+			"complete": "Complete",
+			"cancel": "Cancel",
+			"noShow": "Mark No-Show",
+			"cancelDescription": "Confirm the cancellation for this appointment.",
+			"noShowDescription": "Confirm marking this appointment as no-show."
+		},
+		"empty": {
+			"title": "No appointments found",
+			"description": "Try clearing filters or check back later."
+		},
+		"errors": {
+			"loadQueue": "Failed to load the queue."
+		}
+	},
+  "staffPatients": {
+    "title": "Patients",
+    "searchPlaceholder": "Search by name, phone, or email",
+    "searchAriaLabel": "Search patients",
+    "resultCount": "{{count}} patient(s) found",
+    "resultCountAriaLabel": "{{count}} matching patients",
+    "guidance": {
+      "title": "Find a Patient",
+      "description": "Type at least two characters to search for a patient by name, phone number, or email address."
+    },
+    "loading": {
+      "results": "Searching patients...",
+      "detail": "Loading patient details...",
+      "history": "Loading appointment history..."
+    },
+    "searchResults": {
+      "label": "Patient search results",
+      "noResults": "No patients match your search. Try a different name, phone, or email.",
+      "empty": "Enter a search term to find patients."
+    },
+    "card": {
+      "selectPatient": "Select patient",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "dateOfBirth": "Date of birth",
+      "activeStatus": "Active",
+      "inactiveStatus": "Inactive",
+      "lastAppointment": "Last appointment",
+      "nextAppointment": "Next appointment",
+      "noAppointments": "No appointments",
+      "notProvided": "Not provided"
+    },
+    "detail": {
+      "title": "Patient Details",
+      "selectGuidance": "Select a patient to view their details.",
+      "unavailable": "Patient details are currently unavailable. The patient record may have been removed or deactivated.",
+      "identity": {
+        "label": "Patient identity",
+        "memberSince": "Member since",
+        "languagePreference": "Preferred language",
+        "languageEn": "English",
+        "languageAr": "Arabic"
+      },
+      "summary": {
+        "label": "Appointment summary",
+        "lastAppointment": "Last visit",
+        "nextAppointment": "Next visit",
+        "noPastVisits": "No past visits",
+        "noUpcomingVisits": "No upcoming visits",
+        "pastAppointmentsCount": "Past appointments",
+        "upcomingAppointmentsCount": "Upcoming appointments"
+      },
+      "bookForPatient": "Book Appointment for This Patient"
+    },
+    "history": {
+      "title": "Appointment History",
+      "empty": "No appointment history for this patient.",
+      "filteredZero": "No appointments match the selected filters.",
+      "loading": "Loading history...",
+      "error": "Could not load appointment history. Please try again.",
+      "retry": "Retry",
+      "clickToExpand": "Click to expand details",
+      "needsFollowUp": "Follow-up Required",
+      "notes": "Notes",
+      "cancellationReason": "Cancellation Reason",
+      "noDetails": "No details available for this appointment.",
+      "invalidDateRange": "From date must be less than to date",
+      "columns": {
+        "date": "Date",
+        "time": "Time",
+        "duration": "Duration",
+        "durationMinutes": "{{minutes}} min",
+        "doctor": "Doctor",
+        "info": "Brief Info",
+        "status": "Status",
+        "noDoctor": "Doctor information unavailable"
+      },
+      "filters": {
+        "label": "History filters",
+        "status": "Status",
+        "allStatuses": "All statuses",
+        "fromDate": "From date",
+        "toDate": "To date",
+        "clearFilters": "Clear filters"
+      }
+    },
+    "status": {
+      "PENDING": "Pending",
+      "CONFIRMED": "Confirmed",
+      "IN_PROGRESS": "In progress",
+      "COMPLETED": "Completed",
+      "CANCELED": "Canceled",
+      "NO_SHOW": "No show"
+    },
+    "filters": {
+      "activePatients": "Active patients only",
+      "allPatients": "All patients"
+    },
+    "pagination": {
+      "label": "History pagination",
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page {{page}} of {{totalPages}}"
+    },
+    "reset": "Reset search",
+    "permissionRequired": "You do not have permission to access patient records. Please contact an administrator.",
+    "genericError": "Something went wrong. Please try again.",
+    "notFound": "Patient record not found. It may have been removed or you may not have access.",
+    "forbidden": "Access to patient records is restricted."
+  },
+  "offers": {
+    "loading": "Loading offer...",
+    "title": "Waitlist Offer",
+    "doctorLabel": "Doctor",
+    "specialization": "Specialization",
+    "offeredSlot": "Offered Appointment",
+    "currentAppointment": "Your Current Appointment",
+    "compareLabel": "Your appointment will be replaced by this one",
+    "from": "From",
+    "to": "to",
+    "accept": "Accept Offer",
+    "decline": "Decline",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "retry": "Retry",
+    "expired": "This offer has expired.",
+    "accepted": "Offer Accepted",
+    "declined": "Offer Declined",
+    "acceptedDescription": "Your appointment has been scheduled. You can view it in My Appointments.",
+    "declinedDescription": "You have declined this offer. You can rejoin the waitlist for other available slots.",
+    "notFound": "Offer not found.",
+    "forbidden": "You do not have access to this offer.",
+    "genericError": "Something went wrong. Please try again.",
+    "unavailable": "This slot is no longer available.",
+    "countdownLabel": "Offer expires in",
+    "goToAppointments": "View My Appointments",
+    "goToWaitlist": "Back to Waitlist",
+    "goHome": "Go to Home",
+    "acceptDialogTitle": "Accept Offer",
+    "acceptDialogDescription": "Are you sure you want to accept this offer? Your current appointment will be replaced with the offered slot.",
+    "declineDialogTitle": "Decline Offer",
+    "declineDialogDescription": "Are you sure you want to decline this offer? The slot will be made available to another patient on the waitlist.",
+    "acceptSuccess": "Offer accepted successfully.",
+    "declineSuccess": "You have declined the offer.",
+    "acceptError": "Failed to accept offer. Please try again.",
+    "declineError": "Failed to decline offer. Please try again.",
+    "pending": "Processing...",
+    "nextStepAppointments": "Your appointment has been scheduled. View My Appointments for details.",
+    "nextStepWaitlist": "You can return to the waitlist to join other doctors' lists.",
+    "safeNextStep": "Return to the home page to explore other options."
+  },
+  "clinicSettings": {
+    "title": "Clinic Settings",
+    "subtitle": "Manage clinic-wide booking rules, weekly hours, and holiday closures.",
+    "errors": {
+      "required": "This field is required.",
+      "loadFailed": "Failed to load. Please try again.",
+      "saveFailed": "Save failed. Please try again.",
+      "retry": "Retry"
+    },
+    "unsavedChanges": "You have unsaved changes. Leave anyway?",
+    "bookingRules": {
+      "title": "Booking Rules",
+      "timezone": "Timezone",
+      "slotDuration": "Slot Duration (minutes)",
+      "reminderHours": "Appointment Reminder (hours before)",
+      "offerWindow": "Waitlist Offer Window (minutes)",
+      "arrivalBuffer": "Minimum Arrival Buffer (minutes)",
+      "save": "Save Booking Rules",
+      "invalidTimezone": "Select a valid timezone.",
+      "invalidSlotDuration": "Slot duration must be a whole number.",
+      "slotDurationRange": "Slot duration must be between 5 and 180 minutes.",
+      "slotDurationStep": "Slot duration must be divisible by 5.",
+      "invalidReminderHours": "Reminder hours must be a whole number.",
+      "reminderHoursRange": "Reminder hours must be between 1 and 168.",
+      "invalidOfferWindow": "Offer window must be a whole number.",
+      "offerWindowRange": "Offer window must be between 5 and 1440 minutes.",
+      "invalidArrivalBuffer": "Arrival buffer must be a whole number.",
+      "arrivalBufferRange": "Arrival buffer must be between 0 and 120 minutes.",
+      "conflict": "Settings were updated by another session. Refresh to see the latest."
+    },
+    "weeklyHours": {
+      "title": "Weekly Working Hours",
+      "save": "Save Working Hours",
+      "open": "Open",
+      "closed": "Closed",
+      "startTime": "Start",
+      "endTime": "End",
+      "invalidTime": "Enter a valid time.",
+      "endAfterStart": "End time must be after start time.",
+      "mustHaveSevenDays": "Weekly hours must include seven days.",
+      "duplicateWeekday": "Each weekday can appear only once.",
+      "days": {
+        "0": "Sunday",
+        "1": "Monday",
+        "2": "Tuesday",
+        "3": "Wednesday",
+        "4": "Thursday",
+        "5": "Friday",
+        "6": "Saturday"
+      }
+    },
+    "holidays": {
+      "title": "Holiday Closures",
+      "add": "Add Holiday",
+      "date": "Date",
+      "name": "Holiday Name",
+      "deleteTitle": "Delete Holiday",
+      "deleteDescription": "This holiday closure will be removed and the date will become bookable again.",
+      "deleteConfirm": "Delete",
+      "deleteCancel": "Cancel",
+      "deleteTrigger": "Delete holiday",
+      "duplicateDate": "A holiday already exists on this date.",
+      "dateRequired": "Date is required.",
+      "invalidDate": "Enter a valid date.",
+      "nameRequired": "Holiday name is required.",
+      "nameTooLong": "Holiday name must be 120 characters or fewer."
+    }
+  },
+  "errors": {
+    "forbidden": {
+      "eyebrow": "Access restricted",
+      "title": "You do not have permission to view this page.",
+      "description": "Your account is signed in, but this area is limited to specific clinic roles.",
+      "primaryAuthenticated": "Go to my workspace",
+      "primaryGuest": "Log in",
+      "secondary": "Go back",
+      "support": "If you think this is a mistake, contact the clinic administrator."
+    },
+    "notFound": {
+      "eyebrow": "Page not found",
+      "title": "We could not find that page.",
+      "description": "The link may be outdated, moved, or typed incorrectly.",
+      "primaryAuthenticated": "Go to my workspace",
+      "primaryGuest": "Go home",
+      "secondary": "Go back",
+      "support": "Check the address or use the navigation to continue."
+    }
+  },
+  "landing": {
+    "nav": {
+      "home": "Home",
+      "features": "Features",
+      "services": "Services",
+      "howItWorks": "How It Works",
+      "contact": "Contact",
+      "login": "Login",
+      "register": "Register"
+    },
+    "hero": {
+      "eyebrow": "Modern Dental Care",
+      "headline": "Book Your Dental Appointment Online",
+      "subheadline": "Skip the phone calls. Pick a slot, get confirmed, and receive a reminder — all in minutes.",
+      "cta": {
+        "book": "Book an Appointment",
+        "queue": "View Live Queue"
+      },
+      "trust": {
+        "slots": "Same-Day Slots",
+        "cancel": "24h Cancellation",
+        "reminders": "Email Reminders"
+      }
+    },
+    "stats": {
+      "patients": "Patients Served",
+      "satisfaction": "Satisfaction Rate",
+      "doctors": "Specialist Doctors",
+      "waitTime": "Avg. Wait Time"
+    },
+    "features": {
+      "title": "Why Choose Our Clinic",
+      "cards": {
+        "booking": { "title": "Online Booking", "body": "Book anytime from any device without calling." },
+        "reminders": { "title": "Smart Reminders", "body": "Automatic email reminders before your appointment." },
+        "waitlist": { "title": "Waitlist Engine", "body": "Get notified automatically when a cancellation matches your window." },
+        "queue": { "title": "Live Queue Display", "body": "See your position in real time on any screen." },
+        "bilingual": { "title": "Bilingual", "body": "Full Arabic and English support with RTL layout." },
+        "secure": { "title": "Secure & Private", "body": "JWT auth, encrypted passwords, and role-based access." }
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "steps": {
+        "1": { "title": "Register", "desc": "Create a free account with your email in under a minute." },
+        "2": { "title": "Choose a Slot", "desc": "Pick a doctor, date, and available time that works for you." },
+        "3": { "title": "Get Confirmed", "desc": "Receive an instant email confirmation for your booking." },
+        "4": { "title": "Show Up", "desc": "We'll remind you 24 hours before — no surprises." }
+      }
+    },
+    "testimonials": {
+      "title": "What Our Patients Say",
+      "items": {
+        "1": { "name": "Sara M.", "quote": "Booking online saved me so much time. I got a slot in 2 minutes!" },
+        "2": { "name": "Ahmed K.", "quote": "The Arabic interface was perfect. Very easy to use." },
+        "3": { "name": "Lina R.", "quote": "The waitlist feature got me an earlier appointment automatically. Brilliant." }
+      }
+    },
+    "cta": {
+      "heading": "Ready to book your next appointment?",
+      "button": "Get Started",
+      "login": "Already have an account? Log in"
+    },
+    "footer": {
+      "tagline": "Quality dental care, made simple.",
+      "quickLinks": "Quick Links",
+      "contact": "Contact Us",
+      "copyright": "© {{year}} Dental Clinic. All rights reserved."
+    }
+  }
+}
+

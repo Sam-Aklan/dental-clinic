@@ -1,0 +1,53 @@
+// ─── Clinic Setup ────────────────────────────────────────────────────────────
+
+model ClinicConfig {
+  id                  String   @id @default(cuid())
+  slotDurationMinutes Int      @default(30)
+  timeZone            String   @default("UTC")
+  reminderHoursBefore Int      @default(24)
+  offerWindowMinutes  Int      @default(30)
+  minArrivalMinutes   Int      @default(45)
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+}
+
+model WorkingHour {
+  id        String   @id @default(cuid())
+  dayOfWeek Int
+  isClosed  Boolean  @default(false)
+  startTime String?
+  endTime   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([dayOfWeek])
+}
+
+model Holiday {
+  id        String   @id @default(cuid())
+  date      DateTime @db.Date
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([date])
+  @@index([date])
+}
+
+model DoctorScheduleOverride {
+  id              String   @id @default(cuid())
+  doctorProfileId String
+  date            DateTime @db.Date
+  startTime       String?
+  endTime         String?
+  isUnavailable   Boolean  @default(false)
+  reason          String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  doctorProfile DoctorProfile @relation(fields: [doctorProfileId], references: [id], onDelete: Cascade)
+
+  @@unique([doctorProfileId, date])
+  @@index([doctorProfileId])
+  @@index([date])
+}

@@ -1,0 +1,41 @@
+// ─── Waitlist ────────────────────────────────────────────────────────────────
+
+model WaitlistEntry {
+  id               String   @id @default(cuid())
+  patientProfileId String
+  doctorProfileId  String
+  position         Int
+  availableFrom    String?
+  availableUntil   String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  patientProfile PatientProfile  @relation(fields: [patientProfileId], references: [id], onDelete: Cascade)
+  doctorProfile  DoctorProfile   @relation(fields: [doctorProfileId], references: [id], onDelete: Restrict)
+  offers         WaitlistOffer[]
+
+  @@unique([patientProfileId, doctorProfileId])
+  @@index([doctorProfileId, position])
+}
+
+model WaitlistOffer {
+  id               String              @id @default(cuid())
+  waitlistEntryId  String
+  patientProfileId String
+  doctorProfileId  String
+  offeredStartsAt  DateTime
+  offeredEndsAt    DateTime
+  status           WaitlistOfferStatus @default(PENDING)
+  expiresAt        DateTime
+  createdAt        DateTime            @default(now())
+  updatedAt        DateTime            @updatedAt
+
+  waitlistEntry  WaitlistEntry  @relation(fields: [waitlistEntryId], references: [id], onDelete: Cascade)
+  patientProfile PatientProfile @relation(fields: [patientProfileId], references: [id], onDelete: Restrict)
+  doctorProfile  DoctorProfile  @relation(fields: [doctorProfileId], references: [id], onDelete: Restrict)
+
+  @@index([patientProfileId, status])
+  @@index([doctorProfileId, status])
+  @@index([status])
+  @@index([expiresAt])
+}

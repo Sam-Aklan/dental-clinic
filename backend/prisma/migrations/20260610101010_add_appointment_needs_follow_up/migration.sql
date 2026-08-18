@@ -1,0 +1,2 @@
+ALTER TABLE "Appointment"
+ADD COLUMN "needsFollowUp" BOOLEAN NOT NULL DEFAULT false;

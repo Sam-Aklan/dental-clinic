@@ -1,0 +1,36 @@
+// ─── Enums ───────────────────────────────────────────────────────────────────
+
+enum Role {
+  ADMIN
+  RECEPTIONIST
+  DOCTOR
+  PATIENT
+}
+
+enum AppointmentStatus {
+  PENDING
+  CONFIRMED
+  IN_PROGRESS
+  COMPLETED
+  CANCELED
+  NO_SHOW
+}
+
+enum WaitlistOfferStatus {
+  PENDING
+  ACCEPTED
+  DECLINED
+  EXPIRED
+}
+
+enum Locale {
+  EN
+  AR
+}
+
+enum FollowUpStatus {
+  SCHEDULED
+  COMPLETED
+  CANCELED
+  MISSED
+}

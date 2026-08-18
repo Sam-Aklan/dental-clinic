@@ -1,0 +1,54 @@
+// ─── Scheduling ──────────────────────────────────────────────────────────────
+
+model Appointment {
+  id                 String            @id @default(cuid())
+  doctorProfileId    String
+  patientUserId      String
+  startTime          DateTime
+  endTime            DateTime
+  status             AppointmentStatus @default(PENDING)
+  needsFollowUp      Boolean           @default(false)
+  idempotencyKey     String?           @unique
+  cancellationReason String?
+  notes              String?
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+
+  doctorProfile     DoctorProfile @relation("DoctorAppointments", fields: [doctorProfileId], references: [id], onDelete: Restrict)
+  patient           User          @relation("PatientAppointments", fields: [patientUserId], references: [id], onDelete: Restrict)
+  followUp          FollowUp?     @relation("FollowUpAppointment")
+  followUpsAsSource FollowUp[]    @relation("FollowUpSourceAppointment")
+
+  @@index([doctorProfileId])
+  @@index([patientUserId])
+  @@index([startTime, endTime])
+  @@index([status])
+  @@index([idempotencyKey])
+  @@index([doctorProfileId, startTime])
+}
+
+model FollowUp {
+  id                  String         @id @default(cuid())
+  appointmentId       String         @unique
+  sourceAppointmentId String?
+  patientUserId       String
+  doctorProfileId     String
+  scheduledById       String
+  status              FollowUpStatus @default(SCHEDULED)
+  reason              String
+  notes               String?
+  cancellationReason  String?
+  createdAt           DateTime       @default(now())
+  updatedAt           DateTime       @updatedAt
+
+  appointment       Appointment   @relation("FollowUpAppointment", fields: [appointmentId], references: [id], onDelete: Restrict)
+  sourceAppointment Appointment?  @relation("FollowUpSourceAppointment", fields: [sourceAppointmentId], references: [id], onDelete: SetNull)
+  patient           User          @relation("FollowUpPatient", fields: [patientUserId], references: [id], onDelete: Restrict)
+  doctorProfile     DoctorProfile @relation(fields: [doctorProfileId], references: [id], onDelete: Restrict)
+  scheduledBy       User          @relation("FollowUpScheduledBy", fields: [scheduledById], references: [id], onDelete: Restrict)
+
+  @@index([doctorProfileId, status])
+  @@index([patientUserId, status])
+  @@index([sourceAppointmentId])
+  @@index([createdAt])
+}

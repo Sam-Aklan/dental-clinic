@@ -1,0 +1,83 @@
+// ─── Identity ────────────────────────────────────────────────────────────────
+
+model User {
+  id              String   @id @default(cuid())
+  email           String   @unique
+  passwordHash    String
+  role            Role
+  firstName       String
+  lastName        String
+  phone           String?
+  preferredLocale Locale   @default(EN)
+  isActive        Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  refreshTokens         RefreshToken[]
+  passwordResetTokens   PasswordResetToken[]
+  doctorProfile         DoctorProfile?
+  patientProfile        PatientProfile?
+  appointmentsAsPatient Appointment[]        @relation("PatientAppointments")
+  followUpsAsPatient    FollowUp[]           @relation("FollowUpPatient")
+  followUpsAsScheduler  FollowUp[]           @relation("FollowUpScheduledBy")
+  auditLogs             AuditLog[]           @relation("ActorAuditLogs")
+
+  @@index([role])
+  @@index([isActive])
+}
+
+model RefreshToken {
+  id        String   @id @default(cuid())
+  tokenHash String   @unique
+  userId    String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  tokenHash String    @unique
+  userId    String
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model DoctorProfile {
+  id             String   @id @default(cuid())
+  userId         String   @unique
+  specialization String?
+  bio            String?
+  avatarUrl      String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  user              User                     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  appointments      Appointment[]            @relation("DoctorAppointments")
+  scheduleOverrides DoctorScheduleOverride[]
+  waitlistEntries   WaitlistEntry[]
+  waitlistOffers    WaitlistOffer[]
+  followUps         FollowUp[]
+}
+
+model PatientProfile {
+  id          String    @id @default(cuid())
+  userId      String    @unique
+  dateOfBirth DateTime?
+  address     String?
+  notes       String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  user            User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  waitlistEntries WaitlistEntry[]
+  waitlistOffers  WaitlistOffer[]
+}
